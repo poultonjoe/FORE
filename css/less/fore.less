@@ -1,0 +1,43 @@
+/* main stylesheet. will eventually replace main.css */
+
+@media-cutoff: 780px;
+
+html body {
+	text-align: center;
+	.container {
+		
+	}
+
+	.row {
+		padding: 30px;
+		&.root {
+			max-width: 1100px;
+			margin: auto;
+		}
+		&.no-pad {
+			padding: 0 30px;
+		}
+	}
+	#map {
+	    width: auto;
+	    height: 60vh;
+	}	
+}
+
+@media (min-width:@media-cutoff) {
+	html body {
+		text-align: left;
+		/* rig layout of items without upsetting data flow */
+		.item-left {
+			float: left;
+		}
+		.item-right {
+			float: right;
+		}
+		.row {
+			&.center {
+				text-align: center;
+			}
+		}
+	}
+}
