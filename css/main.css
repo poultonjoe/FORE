@@ -281,54 +281,6 @@ textarea {
     }
 }
 
-/* ==========================================================================
-   Titles
-   ========================================================================== */
-
-h1 {
-    text-align: center;
-}
-
-.white-title {
-    color: #FFFFFF;
-    padding-bottom: 2%;
-}
-
-.black-title {
-    color: #1D1D1B;
-    padding-bottom: 2%;
-}
-
-.partners-title {
-    padding-top: 3%;
-    color: #676766;
-}
-
-/* ==========================================================================
-   Menu
-   ========================================================================== */
-
-
-li {
-    float: right;
-    position: relative;
-    right: 5%;
-}
-
-li a {
-    display: block;
-    color: #2581C4;
-    padding: 16px;
-    line-height: 6pt;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-ul {
-  list-style-type: none;
-}
-
 /* Main content */
 .content {
     margin-top: 40px; /* Add a top margin to avoid content overlay */
@@ -463,120 +415,6 @@ ul {
     text-decoration: none;
 }
 
-
-/* ==========================================================================
-   Containers
-   ========================================================================== */
-
-.index-container-blue {
-    padding-top: 2%;
-    padding-bottom: 2%;
-    height: auto;
-    background: lightblue; /* For browsers that do not support gradients */    
-    background: -webkit-linear-gradient(left bottom, #2d2e83, #2581c4); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(bottom left, #2d2e83, #2581c4); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(bottom left, #2d2e83, #2581c4); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to bottom left, #2d2e83, #2581c4); /* Standard syntax (must be last) */
-}
-
-.index-container-grey {
-    background-color: #F2F2F2;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    height: auto;
-
-}
-
-.index-container-white {
-    background-color: #FFFFFF;
-    padding-bottom: 2%;
-    padding-bottom: 2%;
-    height: auto;
-
-}
-
-/* ==========================================================================
-   Full Width Sections
-   ========================================================================== */
-
-.blue-full-width {
-    color: white;
-    margin: auto;
-    width: 80%;
-    height: auto;
-}
-
-.grey-full-width {
-    color: #1D1D1B;
-    margin: auto;
-    width: 80%;
-    height: auto;
-}
-
-.white-full-width {
-    color: #1D1D1B;
-    margin: auto;
-    height: auto;
-}
-
-.white-less-width {
-    color: #1D1D1B;
-    margin: auto;
-    width: 65%;
-    height: auto;
-    text-align: center;
-}
-
-/* ==========================================================================
-   Services Section
-   ========================================================================== */
-
-.left-half {
-    flex: 1;
-    padding-left: 7%;
-    padding-right: 2%;
-    padding-bottom: 2%;
-    width: 91%;
-
-}
-
-.right-half {
-    flex: 1;
-    padding-right: 7%;
-    padding-bottom: 2%;
-    width: 91%;
-}
-
-p.left-services {
-    color: #88D0E9;
-    padding-left: 7%;
-    padding-right: 2%;
-    width: 91%;
-}
-
-h2.left-services-title {
-    color: #FFFFFF;
-    padding-left: 7%;
-    padding-right: 2%;
-    width: 91%;
-    margin-top: -1%;
-}
-
-p.right-services {
-    color: #88D0E9;
-    padding-right: 7%;
-    padding-left: 0%;
-    width: 91%;
-}
-
-h2.right-services-title {
-    color: #FFFFFF;
-    padding-right: 7%;
-    padding-left: 0%;
-    width: 91%;
-    margin-top: -1%;
-}
-
 /* ==========================================================================
    Events Section
    ========================================================================== */
@@ -620,9 +458,7 @@ h2.events-title {
    Contact Section
    ========================================================================== */
 
-.contact-container {
-    display: flex;
-}
+
 
 .contact-left-half {
     flex: 1.4 0 0;
@@ -645,10 +481,6 @@ h2.events-title {
 /* ==========================================================================
    Partners Section
    ========================================================================== */
-
-.partners {
-
-}
 
 .leadbetter-logo {
     padding-left: 15px;

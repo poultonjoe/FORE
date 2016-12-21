@@ -1,15 +1,89 @@
 /* main stylesheet. will eventually replace main.css */
 
 @media-cutoff: 780px;
+@font-large: 30px;
+@font-med: 22px;
+@font-small: 16px;
+@font-tiny: 14px;
 
 html body {
 	text-align: center;
-	.container {
-		
+
+	/* Header & nav */
+	header {
+		li {
+		    float: right;
+		    position: relative;
+		    right: 5%;
+			a {
+			    display: block;
+			    color: #2581C4;
+			    padding: 16px;
+			    line-height: 6pt;
+			    text-decoration: none;
+			    text-transform: uppercase;
+			    font-weight: bold;
+			}
+		}
+		ul {
+		 	list-style-type: none;
+		}
 	}
 
+	/* Containers */
+	.index-container-blue {
+	    padding-top: 2%;
+	    padding-bottom: 2%;
+	    height: auto;
+	    background: lightblue; /* For browsers that do not support gradients */    
+	    background: -webkit-linear-gradient(left bottom, #2d2e83, #2581c4); /* For Safari 5.1 to 6.0 */
+	    background: -o-linear-gradient(bottom left, #2d2e83, #2581c4); /* For Opera 11.1 to 12.0 */
+	    background: -moz-linear-gradient(bottom left, #2d2e83, #2581c4); /* For Firefox 3.6 to 15 */
+	    background: linear-gradient(to bottom left, #2d2e83, #2581c4); /* Standard syntax (must be last) */
+	}
+	.index-container-grey {
+	    background-color: #F2F2F2;
+	    padding-top: 2%;
+	    padding-bottom: 2%;
+	    height: auto;
+
+	}
+	.index-container-white {
+	    background-color: #FFFFFF;
+	    padding-bottom: 2%;
+	    padding-bottom: 2%;
+	    height: auto;
+	}
+	.blue-full-width {
+	    color: white;
+	    margin: auto;
+	    width: 80%;
+	    height: auto;
+	}
+	.grey-full-width {
+	    color: #1D1D1B;
+	    margin: auto;
+	    width: 80%;
+	    height: auto;
+	}
+	.white-full-width {
+	    color: #1D1D1B;
+	    margin: auto;
+	    height: auto;
+	}
+	.white-sub {
+	    color: #1D1D1B;
+	    margin: auto;
+	    height: auto;
+	    text-align: center;
+	    padding: 20px;
+	    max-width: 80%;
+	    p {
+    		margin-bottom: 20px;
+	    }
+	}
 	.row {
-		padding: 30px;
+		padding: 20px 30px;
 		&.root {
 			max-width: 1100px;
 			margin: auto;
@@ -18,10 +92,135 @@ html body {
 			padding: 0 30px;
 		}
 	}
+	.stacked-content-sm {
+		h1 {
+			margin: 25px 0 0 0;
+		}
+		h2,h3,h4,h5,h6 {
+			margin-top: 40px;
+		    padding-top: 0;
+		    margin-bottom: 30px;
+		}
+		.row {
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+		.buttons-container {
+			margin-top: 15px;
+		}
+	}
+
+
+	
+	footer {
+		.footer-menu {
+			li {
+				padding: 20px 
+			}
+			.nav-logo-inline {
+
+			}
+		}
+	}
+
+	/* Titles & text */
+	h1, h2, h3, h4, h5, h6 {
+		padding: 0;
+		margin: 10px 0;
+		font-weight: bold;
+	}	
+	h1 {
+	    text-align: center;
+	    margin: 0;
+	    font-size: @font-large;
+	}
+	h2, h3 {
+		font-size: @font-med;
+	}
+	h4, h5, h6 {
+		font-size: @font-small;
+	}
+	p {
+		font-size: @font-tiny;
+		color: #000;
+	}
+	.text-blue, .text-blue p {
+		color: #88D0E9;
+	}
+	.text-blue {
+		h1,h2,h3,h4,h5,h6 {
+			color: #fff;
+		}
+	}
+	.white-title {
+	    color: #FFFFFF;
+	    padding-bottom: 2%;
+	}
+	.black-title {
+	    color: #1D1D1B;
+	    padding-bottom: 2%;
+	}
+	.partners-title {
+	    padding-top: 3%;
+	    color: #676766;
+	}
+
+	/* Forms */
+	form {
+		input, textarea, select {
+			width: 100%;
+			margin-bottom: 10px;
+			border-radius: 2px;
+			border: 0;
+			padding: 3px 5px;
+		}
+	}
+
+	/* Lists */
+	ul, ol {
+		padding: 10px 0;
+		margin: 0;
+	}
+	.inline-list {
+		li {
+			display: inline-block;
+			padding: 10px;
+		}
+	}
+
+	/* Buttons */
+	.buttons-container {
+		&.light .button {
+			border: 0;
+			background: #88D0E9;
+		}
+	}
+	.button {
+		background: none;
+		color: #fff;
+		display: inline-block;
+		padding: 3px 15px;
+		border-radius: 2px;
+		border: 2px solid #88D0E9;
+		margin-right: 10px;
+		transition: linear 0.2s;
+		&:hover {
+			background: #88D0E9;
+			text-decoration: none;
+		}
+	}
+
+	/* 3rd Party */
 	#map {
 	    width: auto;
 	    height: 60vh;
-	}	
+	}
+
+	/* mobile stuff, overridden by media query at bottom */
+	.center-sm {
+		text-align: center;
+	}
+
 }
 
 @media (min-width:@media-cutoff) {
@@ -35,9 +234,33 @@ html body {
 			float: right;
 		}
 		.row {
-			&.center {
+			.center-md, &.center-md {
 				text-align: center;
 			}
+			.center-sm, &.center-sm {
+				text-align: left;
+			}
+		}
+		.split-content-md {
+			h1 {
+				margin: 25px 0;
+			}
+			h2,h3,h4,h5,h6 {
+				margin-top: 0;
+				padding-top: 0;
+			}
+			.row {
+				padding-bottom: 50px;
+				&:first-child {
+					padding-bottom: 0px;
+				}
+				&:last-child {
+					padding-bottom: 10px;
+				}
+			}
+		}
+		.white-sub {
+		    max-width: 70%;
 		}
 	}
 }

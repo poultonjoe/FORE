@@ -1,9 +1,88 @@
 /* main stylesheet. will eventually replace main.css */
 html body {
   text-align: center;
+  /* Header & nav */
+  /* Containers */
+  /* Titles & text */
+  /* Forms */
+  /* Lists */
+  /* Buttons */
+  /* 3rd Party */
+  /* mobile stuff, overridden by media query at bottom */
+}
+html body header li {
+  float: right;
+  position: relative;
+  right: 5%;
+}
+html body header li a {
+  display: block;
+  color: #2581C4;
+  padding: 16px;
+  line-height: 6pt;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+html body header ul {
+  list-style-type: none;
+}
+html body .index-container-blue {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  height: auto;
+  background: lightblue;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left bottom, #2d2e83, #2581c4);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom left, #2d2e83, #2581c4);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom left, #2d2e83, #2581c4);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom left, #2d2e83, #2581c4);
+  /* Standard syntax (must be last) */
+}
+html body .index-container-grey {
+  background-color: #F2F2F2;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  height: auto;
+}
+html body .index-container-white {
+  background-color: #FFFFFF;
+  padding-bottom: 2%;
+  height: auto;
+}
+html body .blue-full-width {
+  color: white;
+  margin: auto;
+  width: 80%;
+  height: auto;
+}
+html body .grey-full-width {
+  color: #1D1D1B;
+  margin: auto;
+  width: 80%;
+  height: auto;
+}
+html body .white-full-width {
+  color: #1D1D1B;
+  margin: auto;
+  height: auto;
+}
+html body .white-sub {
+  color: #1D1D1B;
+  margin: auto;
+  height: auto;
+  text-align: center;
+  padding: 20px;
+  max-width: 80%;
+}
+html body .white-sub p {
+  margin-bottom: 20px;
 }
 html body .row {
-  padding: 30px;
+  padding: 20px 30px;
 }
 html body .row.root {
   max-width: 1100px;
@@ -12,9 +91,122 @@ html body .row.root {
 html body .row.no-pad {
   padding: 0 30px;
 }
+html body .stacked-content-sm h1 {
+  margin: 25px 0 0 0;
+}
+html body .stacked-content-sm h2,
+html body .stacked-content-sm h3,
+html body .stacked-content-sm h4,
+html body .stacked-content-sm h5,
+html body .stacked-content-sm h6 {
+  margin-top: 40px;
+  padding-top: 0;
+  margin-bottom: 30px;
+}
+html body .stacked-content-sm .row {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+html body .stacked-content-sm .buttons-container {
+  margin-top: 15px;
+}
+html body footer .footer-menu li {
+  padding: 20px;
+}
+html body h1,
+html body h2,
+html body h3,
+html body h4,
+html body h5,
+html body h6 {
+  padding: 0;
+  margin: 10px 0;
+  font-weight: bold;
+}
+html body h1 {
+  text-align: center;
+  margin: 0;
+  font-size: 30px;
+}
+html body h2,
+html body h3 {
+  font-size: 22px;
+}
+html body h4,
+html body h5,
+html body h6 {
+  font-size: 16px;
+}
+html body p {
+  font-size: 14px;
+  color: #000;
+}
+html body .text-blue,
+html body .text-blue p {
+  color: #88D0E9;
+}
+html body .text-blue h1,
+html body .text-blue h2,
+html body .text-blue h3,
+html body .text-blue h4,
+html body .text-blue h5,
+html body .text-blue h6 {
+  color: #fff;
+}
+html body .white-title {
+  color: #FFFFFF;
+  padding-bottom: 2%;
+}
+html body .black-title {
+  color: #1D1D1B;
+  padding-bottom: 2%;
+}
+html body .partners-title {
+  padding-top: 3%;
+  color: #676766;
+}
+html body form input,
+html body form textarea,
+html body form select {
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 2px;
+  border: 0;
+  padding: 3px 5px;
+}
+html body ul,
+html body ol {
+  padding: 10px 0;
+  margin: 0;
+}
+html body .inline-list li {
+  display: inline-block;
+  padding: 10px;
+}
+html body .buttons-container.light .button {
+  border: 0;
+  background: #88D0E9;
+}
+html body .button {
+  background: none;
+  color: #fff;
+  display: inline-block;
+  padding: 3px 15px;
+  border-radius: 2px;
+  border: 2px solid #88D0E9;
+  margin-right: 10px;
+  transition: linear 0.2s;
+}
+html body .button:hover {
+  background: #88D0E9;
+  text-decoration: none;
+}
 html body #map {
   width: auto;
   height: 60vh;
+}
+html body .center-sm {
+  text-align: center;
 }
 @media (min-width: 780px) {
   html body {
@@ -27,7 +219,35 @@ html body #map {
   html body .item-right {
     float: right;
   }
-  html body .row.center {
+  html body .row .center-md,
+  html body .row.center-md {
     text-align: center;
+  }
+  html body .row .center-sm,
+  html body .row.center-sm {
+    text-align: left;
+  }
+  html body .split-content-md h1 {
+    margin: 25px 0;
+  }
+  html body .split-content-md h2,
+  html body .split-content-md h3,
+  html body .split-content-md h4,
+  html body .split-content-md h5,
+  html body .split-content-md h6 {
+    margin-top: 0;
+    padding-top: 0;
+  }
+  html body .split-content-md .row {
+    padding-bottom: 50px;
+  }
+  html body .split-content-md .row:first-child {
+    padding-bottom: 0px;
+  }
+  html body .split-content-md .row:last-child {
+    padding-bottom: 10px;
+  }
+  html body .white-sub {
+    max-width: 70%;
   }
 }
