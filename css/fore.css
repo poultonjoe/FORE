@@ -7,8 +7,9 @@ html body {
   /* Forms */
   /* Lists */
   /* Buttons */
+  /* Carousels */
   /* 3rd Party */
-  /* mobile stuff, overridden by media query at bottom */
+  /* mobile stuff, overridden by media query in fore-desktop where needed */
 }
 html body header li {
   float: right;
@@ -141,6 +142,9 @@ html body p {
   font-size: 14px;
   color: #000;
 }
+html body .small-text {
+  font-size: 11px;
+}
 html body .text-blue,
 html body .text-blue p {
   color: #88D0E9;
@@ -200,6 +204,43 @@ html body .button {
 html body .button:hover {
   background: #88D0E9;
   text-decoration: none;
+}
+html body .carousel {
+  padding: 40px 0;
+  width: 80%;
+  margin: auto;
+}
+html body .carousel > div {
+  text-align: center;
+}
+html body .carousel > div img {
+  margin: auto;
+}
+html body .carousel > div .main-content {
+  display: none;
+}
+html body .carousel .slick-current .main-content {
+  display: block;
+}
+html body .carousel .slick-arrow {
+  color: #2d2e83;
+  border-radius: 50px;
+  border: 3px solid;
+  padding: 15px;
+}
+html body .carousel .slick-arrow:before {
+  color: #2d2e83;
+  top: 20%;
+  position: absolute;
+  text-align: center;
+  left: 5px;
+  font-weight: bold;
+}
+html body .carousel .slick-arrow.slick-prev:before {
+  content: "⏴";
+}
+html body .carousel .slick-arrow.slick-next:before {
+  content: "⏵";
 }
 html body #map {
   width: auto;

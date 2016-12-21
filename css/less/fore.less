@@ -5,6 +5,7 @@
 @font-med: 22px;
 @font-small: 16px;
 @font-tiny: 14px;
+@font-super-tiny: 11px;
 
 html body {
 	text-align: center;
@@ -109,8 +110,6 @@ html body {
 			margin-top: 15px;
 		}
 	}
-
-
 	
 	footer {
 		.footer-menu {
@@ -143,6 +142,9 @@ html body {
 	p {
 		font-size: @font-tiny;
 		color: #000;
+	}
+	.small-text {
+		font-size: @font-super-tiny;
 	}
 	.text-blue, .text-blue p {
 		color: #88D0E9;
@@ -210,57 +212,58 @@ html body {
 		}
 	}
 
+	/* Carousels */
+	.carousel {
+		padding: 40px 0;
+		width: 80%;
+		margin: auto;
+		> div {
+			text-align: center;
+			img {
+				margin: auto;
+			}
+			.main-content {
+				display: none;
+			}
+		}
+		.slick-current {
+			.main-content {
+				display: block;
+			}
+		}
+		.slick-arrow {
+			color: #2d2e83;
+			border-radius: 50px;
+			border: 3px solid;
+			padding: 15px;
+			&:before {
+				color: #2d2e83;
+				top: 20%;
+			    position: absolute;
+			    text-align: center;
+			    left: 5px;
+			    font-weight: bold;
+			}
+			&.slick-prev:before {
+				content: "⏴";
+			}
+			&.slick-next:before {
+				content: "⏵";
+			}
+		}
+	}
+
 	/* 3rd Party */
 	#map {
 	    width: auto;
 	    height: 60vh;
 	}
 
-	/* mobile stuff, overridden by media query at bottom */
+	/* mobile stuff, overridden by media query in fore-desktop where needed */
 	.center-sm {
 		text-align: center;
 	}
 
 }
 
-@media (min-width:@media-cutoff) {
-	html body {
-		text-align: left;
-		/* rig layout of items without upsetting data flow */
-		.item-left {
-			float: left;
-		}
-		.item-right {
-			float: right;
-		}
-		.row {
-			.center-md, &.center-md {
-				text-align: center;
-			}
-			.center-sm, &.center-sm {
-				text-align: left;
-			}
-		}
-		.split-content-md {
-			h1 {
-				margin: 25px 0;
-			}
-			h2,h3,h4,h5,h6 {
-				margin-top: 0;
-				padding-top: 0;
-			}
-			.row {
-				padding-bottom: 50px;
-				&:first-child {
-					padding-bottom: 0px;
-				}
-				&:last-child {
-					padding-bottom: 10px;
-				}
-			}
-		}
-		.white-sub {
-		    max-width: 70%;
-		}
-	}
-}
+@import "fore-desktop.less";

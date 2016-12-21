@@ -11,7 +11,11 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/fore.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>        
+        <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script> 
+        <script src="js/jquery.min.js"></script>
+        <script src="js/slick.min.js"></script>        
         <!-- 
             You need to include this script tag on any page that has a Google Map.
 
@@ -23,7 +27,7 @@
             After you sign up, use the following script tag with YOUR_GOOGLE_API_KEY replaced with your actual key.
                 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_API_KEY"></script>
         -->
-        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+       
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/fore.js"></script>
@@ -74,11 +78,9 @@
 	        </div>
 
 		    <div class="row root index-container-blue text-blue stacked-content-sm split-content-md">
-		        
 		        <div class="row root no-pad">
 		            <h1 class="col-12 white-title">How we can help you</h1>
 		        </div>
-
 	            <div class="row root">
 	                <div class="col-sm-12 col-md-6">
 	                    <article>
@@ -97,7 +99,6 @@
 	                    </article>
 	                </div>
 	            </div>
-
 	            <div class="row">
 	                <div class="col-sm-12 col-md-6 item-right">
 	                    <article>
@@ -116,7 +117,6 @@
 	                    </article>
 	                </div>
 	            </div>
-
 	            <div class="row">
 	                <div class="col-sm-12 col-md-6">
 	                    <article>
@@ -135,7 +135,6 @@
 	                    </article>
 	                </div>
 	            </div>
-
 	            <div class="row">
 	            	<div class="col-sm-12 col-md-6 item-right item-left">
 	                    <article>
@@ -153,86 +152,131 @@
                             </div>
 	                    </article>
 	                </div>
-	                
 	            </div>
 	        </div>
 
-			<div class="index-container-grey">
-		    	<div class="row no-pad">
-		    		<h1 class="black-title">Our events</h1>
-		    	</div>
-	            <div class="row events-container">
-	                <div class="col-xs-12 col-md-6 events-left-half item-left">
-	                    <article>
-	                        <img class="left-half" src="http://placehold.it/350x250">
-	                    </article>
-	                </div>
-	                <div class="col-xs-12 col-md-6 events-right-half item-right">
-	                    <article>
-	                        <h2 class="events-title">Official License holders of the World Corporate Golf Challenge in Thailand</h2>
-	                        <p class="right-events">The World Corporate Golf Challenge is the biggest corporate golf tournament in the world and since its inception 22 years ago, over one million golfers have competed across the globe for the chance to represent their company and country at the World Finals.</p>
-	                        <p class="right-events">Recent years have been a period of significant development for the WCGC, building on the success of the previous years and World Finals in Scotland, Sotogrande, Spain, and Cascais, Portugal. The World Final continues to be broadcast by Golfing World TV to over 50 broadcasters with an estimated home reach of 350 million globally. The World Final continues to also cover by Time and Fortune magazines.</p>
-	                        <div class="buttons-container light">
-	                         	<a class="button" href="TODO:NEEDSLINK">Discover More</a>
+			<div class="row root index-container-grey">
+		    	<h1 class="col-12 black-title">Our events</h1>
+                <div class="col-xs-12 col-md-6 events-left-half item-left">
+                    <article>
+                        <img class="left-half" src="http://placehold.it/350x250">
+                    </article>
+                </div>
+                <div class="col-xs-12 col-md-6 events-right-half item-right">
+                    <article>
+                        <h2 class="events-title">Official License holders of the World Corporate Golf Challenge in Thailand</h2>
+                        <p class="right-events">The World Corporate Golf Challenge is the biggest corporate golf tournament in the world and since its inception 22 years ago, over one million golfers have competed across the globe for the chance to represent their company and country at the World Finals.</p>
+                        <p class="right-events">Recent years have been a period of significant development for the WCGC, building on the success of the previous years and World Finals in Scotland, Sotogrande, Spain, and Cascais, Portugal. The World Final continues to be broadcast by Golfing World TV to over 50 broadcasters with an estimated home reach of 350 million globally. The World Final continues to also cover by Time and Fortune magazines.</p>
+                        <div class="buttons-container light">
+                         	<a class="button" href="TODO:NEEDSLINK">Discover More</a>
+                        </div>
+                    </article>
+                </div>
+	        </div>
+
+	        <div class="row root index-container-white white-full-width">
+            	<div class="col-12 center-md">
+            		<h1>Our clients</h1>
+            	</div>
+            	<div class="col-12 center-md">
+                	<h2>We go the extra yard. Here’s some awesome companies that agree.</h2>
+                	<div class="carousel single">
+	                	<div>
+	                		<img src="http://placehold.it/310x140">
+                    		<p>Awesome, really. I can’t say enough about how well our event was tailored to our needs. We’ve used other organisers with varying degrees of satisfaction, but FORE beat the heck out of everyone else. Thanks for an amazing service.</p>
+                    	</div>
+                    	<div>
+	                		<img src="http://placehold.it/310x140">
+                    		<p>Awesome, really. I can’t say enough about how well our event was tailored to our needs. We’ve used other organisers with varying degrees of satisfaction, but FORE beat the heck out of everyone else. Thanks for an amazing service.</p>
+                    	</div>
+                    	<div>
+	                		<img src="http://placehold.it/310x140">
+                    		<p>Awesome, really. I can’t say enough about how well our event was tailored to our needs. We’ve used other organisers with varying degrees of satisfaction, but FORE beat the heck out of everyone else. Thanks for an amazing service.</p>
+                    	</div>
+                    </div>
+                </div>
+       		</div>
+
+        	<div class="row root center-md index-container-grey">
+	            <h1 class="col-12">Our team</h1>
+                <div class="col-12">
+	                <div class="carousel center-multi">
+	                	<div>
+	                		<img src="http://placehold.it/110x140">
+		                	<div class="main-content">
+			                	<h4>Michael Moir</h4>
+				                <p class="small-text"><strong>Managing Partner</strong><br />
+				                Founder of Fenix Xcell. One of Asia’s largest Golf Apparel brands. Michael created the brand 6 years ago and now has distribution in 16 countries and a large corporate clientele who are all involved in golf and events.</p>
+				            </div>
+		            	</div>
+		            	<div>
+		            		<img src="http://placehold.it/110x140">
+		                	<div class="main-content">
+			                	<h4>Joey Joe Joe</h4>
+				                <p class="small-text"><strong>Managing Partner</strong><br />
+				                Founder of Fenix Xcell. One of Asia’s largest Golf Apparel brands. Michael created the brand 6 years ago and now has distribution in 16 countries and a large corporate clientele who are all involved in golf and events.</p>
+				            </div>
+		            	</div>
+		            	<div>
+		            		<img src="http://placehold.it/110x140">
+		                	<div class="main-content">
+			                	<h4>This is Me</h4>
+				                <p class="small-text"><strong>Managing Partner</strong><br />
+				                Founder of Fenix Xcell. One of Asia’s largest Golf Apparel brands. Michael created the brand 6 years ago and now has distribution in 16 countries and a large corporate clientele who are all involved in golf and events.</p>
+				            </div>
+		            	</div>
+		            	<div>
+		            		<img src="http://placehold.it/110x140">
+		                	<div class="main-content">
+			                	<h4>Hello World</h4>
+				                <p class="small-text"><strong>Managing Partner</strong><br />
+				                Founder of Fenix Xcell. One of Asia’s largest Golf Apparel brands. Michael created the brand 6 years ago and now has distribution in 16 countries and a large corporate clientele who are all involved in golf and events.</p>
+				            </div>
+		            	</div><div>
+		            		<img src="http://placehold.it/110x140">
+		                	<div class="main-content">
+			                	<h4>Another Person</h4>
+				                <p class="small-text"><strong>Managing Partner</strong><br />
+				                Founder of Fenix Xcell. One of Asia’s largest Golf Apparel brands. Michael created the brand 6 years ago and now has distribution in 16 countries and a large corporate clientele who are all involved in golf and events.</p>
+				            </div>
+		            	</div>
+		            </div>
+		        </div>
+	        </div>
+
+        	<div id="map" class="row root"></div>
+	        	
+        	<div class="row root index-container-blue">
+    			<h1 class="col-12 white-title">Talk to us</h1>
+            	<div class="row">
+	                <div class="col-sm-12 col-md-6">
+	                    <form action="" method="POST" id="form-contact" class="row no-pad center-sm">
+	                        <input type="text" name="name" placeholder="Name" value="" /><br />
+	                        <input type="text" name="email" placeholder="Email" value="" /><br />
+	                        <input type="text" name="subject" placeholder="Nature of enquiry" value="" /><br />
+	                        <textarea name="message" placeholder="Message" rows="6"></textarea>
+	                        <div id="enquiry-button" class="col-sm-12 col-md-6">
+	                        	<a href="http://www.">Submit Enquiry</a>
 	                        </div>
 	                    </article>
 	                </div>
-	            </div>
-
-		        <div class="row root index-container-white white-full-width">
-                	<div class="col-12 center-md">
-                		<h1>Our clients</h1>
-                	</div>
-                	<div class="col-12 center-md">
-	                	<h2>We go the extra yard. Here’s some awesome companies that agree.</h2>
-	                    <p>Awesome, really. I can’t say enough about how well our event was tailored to our needs. We’ve used other organisers with varying degrees of satisfaction, but FORE beat the heck out of everyone else. Thanks for an amazing service.</p>
+	                <div class="col-sm-12 col-md-6">
+	                    <article>
+                            <h3 class="white-title">Connect with us:</h3>
+                            <p>For any queries you may have:<br />
+                            	E-mail us at <a href="mailto:info@foremanagement.com">info@foremanagement.com</a>
+                            </p>
+                            <address>
+	                            FORE Management Group<br />
+	                            6 Larn Luang Road<br />
+	                            Bangkok 10100
+	                        </address>
+                            <h3><a href="tel:TODO:INTERNATIONALPHONE">(66-2) 288-7000</a></h3>
+	                    </article>
 	                </div>
-	                TODO:CAROUSEL 
-	       		</div>
+            	</div>
+            </div>
 
-	        	<div class="row root center-md index-container-grey">
-		            <h1 class="col-12">Our team</h1>
-	                <div class="col-12">
-	                	TODO:CAROUSEL
-	                	<h2>Michael Moir</h2>
-		                <h4>Managing Partner</h4>
-		                <p>Founder of Fenix Xcell. One of Asia’s largest Golf Apparel brands. Michael created the brand 6 years ago and now has distribution in 16 countries and a large corporate clientele who are all involved in golf and events.</p>
-		            </div>
-		        </div>
-
-	        	<div id="map" class="row root"></div>
-	        	
-	        	<div class="row root index-container-blue">
-	    			<h1 class="col-12 white-title">Talk to us</h1>
-	            	<div class="row">
-		                <div class="col-sm-12 col-md-6">
-		                    <form action="" method="POST" id="form-contact" class="row no-pad center-sm">
-		                        <input type="text" name="name" placeholder="Name" value="" /><br />
-		                        <input type="text" name="email" placeholder="Email" value="" /><br />
-		                        <input type="text" name="subject" placeholder="Nature of enquiry" value="" /><br />
-		                        <textarea name="message" placeholder="Message" rows="6"></textarea>
-		                        <div id="enquiry-button" class="col-sm-12 col-md-6">
-		                        	<a href="http://www.">Submit Enquiry</a>
-		                        </div>
-		                    </article>
-		                </div>
-		                <div class="col-sm-12 col-md-6">
-		                    <article>
-	                            <h3 class="white-title">Connect with us:</h3>
-	                            <p>For any queries you may have:<br />
-	                            	E-mail us at <a href="mailto:info@foremanagement.com">info@foremanagement.com</a>
-	                            </p>
-	                            <address>
-		                            FORE Management Group<br />
-		                            6 Larn Luang Road<br />
-		                            Bangkok 10100
-		                        </address>
-	                            <h3><a href="tel:TODO:INTERNATIONALPHONE">(66-2) 288-7000</a></h3>
-		                    </article>
-		                </div>
-	            	</div>
-	            </div>
-		    </div>
 		    <div class="row root center-md white-sub">
                 <h4 class="col-12 partners-title">Strategic partners</h4>
                 <ul class="col-12 inline-list">

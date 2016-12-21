@@ -1,0 +1,42 @@
+
+@media (min-width:@media-cutoff) {
+	html body {
+		text-align: left;
+		/* rig layout of items without upsetting data flow */
+		.item-left {
+			float: left;
+		}
+		.item-right {
+			float: right;
+		}
+		.row {
+			.center-md, &.center-md {
+				text-align: center;
+			}
+			.center-sm, &.center-sm {
+				text-align: left;
+			}
+		}
+		.split-content-md {
+			h1 {
+				margin: 25px 0;
+			}
+			h2,h3,h4,h5,h6 {
+				margin-top: 0;
+				padding-top: 0;
+			}
+			.row {
+				padding-bottom: 50px;
+				&:first-child {
+					padding-bottom: 0px;
+				}
+				&:last-child {
+					padding-bottom: 10px;
+				}
+			}
+		}
+		.white-sub {
+		    max-width: 70%;
+		}
+	}
+}
