@@ -96,7 +96,7 @@ html body {
     		left: 30px;
     		position: absolute;
 			.box-shadow-menu {
-				position: fixed;
+				position: relative;
 				padding-left: 1.25em;
 				font-size: 40px;
 				z-index: 10002;
@@ -126,6 +126,13 @@ html body {
 	    background: -o-linear-gradient(bottom left, @darkBlue, #2581c4); /* For Opera 11.1 to 12.0 */
 	    background: -moz-linear-gradient(bottom left, @darkBlue, #2581c4); /* For Firefox 3.6 to 15 */
 	    background: linear-gradient(to bottom left, @darkBlue, #2581c4); /* Standard syntax (must be last) */
+	    color: #fff;
+	    a, address, p {
+	    	color: #fff;
+	    }
+	    a {
+	    	text-decoration: underline;
+	    }
 	}
 	.index-container-grey {
 	    background-color: #F2F2F2;

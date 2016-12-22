@@ -96,7 +96,7 @@ html body header.row nav.mobile {
   position: absolute;
 }
 html body header.row nav.mobile .box-shadow-menu {
-  position: fixed;
+  position: relative;
   padding-left: 1.25em;
   font-size: 40px;
   z-index: 10002;
@@ -126,6 +126,12 @@ html body .index-container-blue {
   /* For Firefox 3.6 to 15 */
   background: linear-gradient(to bottom left, #2d2e83, #2581c4);
   /* Standard syntax (must be last) */
+  color: #fff;
+}
+html body .index-container-blue a,
+html body .index-container-blue address,
+html body .index-container-blue p {
+  color: #fff;
 }
 html body .index-container-grey {
   background-color: #F2F2F2;
