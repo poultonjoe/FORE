@@ -11,12 +11,16 @@ html body {
   /* 3rd Party */
   /* mobile stuff, overridden by media query in fore-desktop where needed */
 }
-html body header li {
+html body header.row {
+  padding-top: 0;
+  /* mobile specific nav */
+}
+html body header.row li {
   float: right;
   position: relative;
   right: 5%;
 }
-html body header li a {
+html body header.row li a {
   display: block;
   color: #2581C4;
   padding: 16px;
@@ -25,14 +29,94 @@ html body header li a {
   text-transform: uppercase;
   font-weight: bold;
 }
-html body header ul {
+html body header.row ul {
   list-style-type: none;
+}
+html body header.row nav.top-menu {
+  display: none;
+  /* hidden for mobile*/
+  overflow: hidden;
+  z-index: 10000;
+  transition: all 0.2s ease-in-out;
+  height: 60px;
+  background-color: transparent;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  margin: auto;
+}
+html body header.row nav.top-menu ul {
+  width: 96%;
+  margin: auto;
+}
+html body header.row nav.top-menu.active {
+  background: #fff;
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+}
+html body header.row.headerMobileActive {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  z-index: 10001;
+}
+html body header.row.headerMobileActive nav.top-menu {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+html body header.row.headerMobileActive nav.top-menu ul {
+  display: block;
+  text-align: left;
+  padding: 20px;
+  margin-top: 40px;
+  width: 220px;
+  margin-left: 15px;
+}
+html body header.row.headerMobileActive nav.top-menu ul li {
+  display: block;
+  font-size: 22px;
+  float: none;
+  margin-bottom: 20px;
+}
+html body header.row.headerMobileActive nav.top-menu ul li a {
+  border: 3px solid;
+  border-radius: 4px;
+  padding: 25px 20px;
+  display: block;
+  text-align: center;
+}
+html body header.row nav.mobile {
+  display: block;
+  text-align: left;
+  left: 30px;
+  position: absolute;
+}
+html body header.row nav.mobile .box-shadow-menu {
+  position: fixed;
+  padding-left: 1.25em;
+  font-size: 40px;
+  z-index: 10002;
+}
+html body header.row nav.mobile .box-shadow-menu:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.25em;
+  width: 1em;
+  height: 0.15em;
+  background: black;
+  box-shadow: 0 0.25em 0 0 black,
+				0 0.5em 0 0 black;
 }
 html body .index-container-blue {
   padding-top: 2%;
   padding-bottom: 2%;
   height: auto;
-  background: lightblue;
+  background: #88D0E9;
   /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(left bottom, #2d2e83, #2581c4);
   /* For Safari 5.1 to 6.0 */
@@ -145,6 +229,10 @@ html body p {
 html body .small-text {
   font-size: 11px;
 }
+html body .narrow-title {
+  width: 40%;
+  margin: auto;
+}
 html body .text-blue,
 html body .text-blue p {
   color: #88D0E9;
@@ -210,6 +298,9 @@ html body .carousel {
   width: 80%;
   margin: auto;
 }
+html body .carousel.single img {
+  margin-bottom: 15px;
+}
 html body .carousel > div {
   text-align: center;
 }
@@ -223,13 +314,13 @@ html body .carousel .slick-current .main-content {
   display: block;
 }
 html body .carousel .slick-arrow {
-  color: #2d2e83;
+  color: #88D0E9;
   border-radius: 50px;
   border: 3px solid;
   padding: 15px;
 }
 html body .carousel .slick-arrow:before {
-  color: #2d2e83;
+  color: #88D0E9;
   top: 20%;
   position: absolute;
   text-align: center;
@@ -253,6 +344,12 @@ html body .center-sm {
   html body {
     text-align: left;
     /* rig layout of items without upsetting data flow */
+  }
+  html body header.row nav.top-menu {
+    display: inline-block;
+  }
+  html body header.row nav.mobile {
+    display: none;
   }
   html body .item-left {
     float: left;

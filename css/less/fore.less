@@ -6,12 +6,16 @@
 @font-small: 16px;
 @font-tiny: 14px;
 @font-super-tiny: 11px;
+@lightBlue: #88D0E9;
+@medBlue: #23527c;
+@darkBlue: #2d2e83;
 
 html body {
 	text-align: center;
 
 	/* Header & nav */
-	header {
+	header.row {
+		padding-top: 0; 
 		li {
 		    float: right;
 		    position: relative;
@@ -29,6 +33,87 @@ html body {
 		ul {
 		 	list-style-type: none;
 		}
+		nav.top-menu {
+			display: none; /* hidden for mobile*/
+		    overflow: hidden;
+		    z-index: 10000;
+		    transition: all 0.2s ease-in-out;
+		    height: 60px;
+		    background-color:transparent; 
+		    position: fixed;
+		    left: 0;
+		    top: 0;
+		    width: 100%;
+		    margin: auto; 
+		    ul {
+		    	width: 96%;
+		    	margin: auto;
+		    }
+			&.active {
+			    background: #fff;
+			    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+			    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+			    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+			}
+		}
+		/* mobile specific nav */
+		&.headerMobileActive {
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			background: rgba(255,255,255,0.5);
+			z-index: 10001;
+			nav.top-menu {
+				display: block;
+				height: 100%;
+				width: 100%;
+				ul {
+					display: block;
+					text-align: left;
+					padding: 20px;
+					margin-top: 40px;
+					width: 220px;
+					margin-left: 15px;
+					li {
+						display: block;
+						font-size: @font-med;
+						float: none;
+						margin-bottom: 20px;
+						a {
+							border: 3px solid;
+							border-radius: 4px;
+							padding: 25px 20px;
+							display: block;
+							text-align: center;
+						}
+					}
+				}
+			}
+		}
+		nav.mobile {
+			display: block;
+		    text-align: left;
+    		left: 30px;
+    		position: absolute;
+			.box-shadow-menu {
+				position: fixed;
+				padding-left: 1.25em;
+				font-size: 40px;
+				z-index: 10002;
+			}
+			.box-shadow-menu:before {
+				content: "";
+				position: absolute;
+				left: 0;
+				top: 0.25em;
+				width: 1em;
+				height: 0.15em;
+				background: black;
+				box-shadow: 
+				0 0.25em 0 0 black,
+				0 0.5em 0 0 black;
+			}
+		}
 	}
 
 	/* Containers */
@@ -36,11 +121,11 @@ html body {
 	    padding-top: 2%;
 	    padding-bottom: 2%;
 	    height: auto;
-	    background: lightblue; /* For browsers that do not support gradients */    
-	    background: -webkit-linear-gradient(left bottom, #2d2e83, #2581c4); /* For Safari 5.1 to 6.0 */
-	    background: -o-linear-gradient(bottom left, #2d2e83, #2581c4); /* For Opera 11.1 to 12.0 */
-	    background: -moz-linear-gradient(bottom left, #2d2e83, #2581c4); /* For Firefox 3.6 to 15 */
-	    background: linear-gradient(to bottom left, #2d2e83, #2581c4); /* Standard syntax (must be last) */
+	    background: @lightBlue; /* For browsers that do not support gradients */    
+	    background: -webkit-linear-gradient(left bottom, @darkBlue, #2581c4); /* For Safari 5.1 to 6.0 */
+	    background: -o-linear-gradient(bottom left, @darkBlue, #2581c4); /* For Opera 11.1 to 12.0 */
+	    background: -moz-linear-gradient(bottom left, @darkBlue, #2581c4); /* For Firefox 3.6 to 15 */
+	    background: linear-gradient(to bottom left, @darkBlue, #2581c4); /* Standard syntax (must be last) */
 	}
 	.index-container-grey {
 	    background-color: #F2F2F2;
@@ -146,6 +231,10 @@ html body {
 	.small-text {
 		font-size: @font-super-tiny;
 	}
+	.narrow-title {
+		width: 40%;
+		margin: auto;
+	}
 	.text-blue, .text-blue p {
 		color: #88D0E9;
 	}
@@ -203,11 +292,11 @@ html body {
 		display: inline-block;
 		padding: 3px 15px;
 		border-radius: 2px;
-		border: 2px solid #88D0E9;
+		border: 2px solid @lightBlue;
 		margin-right: 10px;
 		transition: linear 0.2s;
 		&:hover {
-			background: #88D0E9;
+			background: @lightBlue;
 			text-decoration: none;
 		}
 	}
@@ -217,6 +306,11 @@ html body {
 		padding: 40px 0;
 		width: 80%;
 		margin: auto;
+		&.single {
+			img {
+				margin-bottom: 15px;
+			}
+		}
 		> div {
 			text-align: center;
 			img {
@@ -232,12 +326,12 @@ html body {
 			}
 		}
 		.slick-arrow {
-			color: #2d2e83;
+			color: @lightBlue;
 			border-radius: 50px;
 			border: 3px solid;
 			padding: 15px;
 			&:before {
-				color: #2d2e83;
+				color: @lightBlue;
 				top: 20%;
 			    position: absolute;
 			    text-align: center;

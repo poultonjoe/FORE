@@ -34,6 +34,7 @@ $(document).ready(function(){
 			focusOnSelect: true,
 			arrows: true,
 			dots: false,
+			centerMode: true,
   			responsive: [
 		    {
 		    	breakpoint: 780,
@@ -53,4 +54,13 @@ $(document).ready(function(){
 			arrows: true,
     	});
     });	
+
+    // mobile nav
+    var header = $('header');
+    $('nav.mobile a.menu-button').click(function(e){
+    	e.preventDefault();
+    	console.log('cliked nav')
+    	header.toggleClass('headerMobileActive');
+
+    });
 });

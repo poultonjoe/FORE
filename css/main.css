@@ -295,25 +295,6 @@ textarea {
     z-index: 10001;
 }
 
-.top-menu {
-    display: inline-block;
-    overflow: hidden;
-    background-color: ;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
-    z-index: 10000;
-    transition: all 0.2s ease-in-out;
-    height: 60px;
-    background-color:transparent;  
-}
-
-.top-menu.active {
-    background: #fff;
-    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
-    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
-}
 
 /* ==========================================================================
    Hero
