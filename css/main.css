@@ -287,6 +287,8 @@ textarea {
 }
 
 .fore-logo {
+    height: 50px;
+    width: auto;
     display: inline-block;
     float: left;
     position: fixed;
