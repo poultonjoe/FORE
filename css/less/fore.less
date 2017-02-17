@@ -7,7 +7,7 @@
 @font-tiny: 14px;
 @font-super-tiny: 11px;
 @lightBlue: #88D0E9;
-@medBlue: #23527c;
+@medBlue: #2c82c2;
 @darkBlue: #2d2e83;
 
 html body {
@@ -127,17 +127,20 @@ html body {
 	    padding-top: 2%;
 	    padding-bottom: 2%;
 	    height: auto;
-	    background: @lightBlue; /* For browsers that do not support gradients */    
-	    background: -webkit-linear-gradient(left bottom, @darkBlue, #2581c4); /* For Safari 5.1 to 6.0 */
-	    background: -o-linear-gradient(bottom left, @darkBlue, #2581c4); /* For Opera 11.1 to 12.0 */
-	    background: -moz-linear-gradient(bottom left, @darkBlue, #2581c4); /* For Firefox 3.6 to 15 */
-	    background: linear-gradient(to bottom left, @darkBlue, #2581c4); /* Standard syntax (must be last) */
+	    background: @lightBlue;
+	    background: -webkit-linear-gradient(left bottom, @darkBlue, #2581c4); 
+	    background: -o-linear-gradient(bottom left, @darkBlue, #2581c4);
+	    background: -moz-linear-gradient(bottom left, @darkBlue, #2581c4);
+	    background: linear-gradient(to bottom left, @darkBlue, #2581c4);
 	    color: #fff;
 	    a, address, p {
 	    	color: #fff;
 	    }
 	    a {
 	    	text-decoration: underline;
+	    	&.button {	
+	    		text-decoration: none;
+	    	}
 	    }
 	}
 	.index-container-grey {
@@ -273,6 +276,26 @@ html body {
 	    padding-top: 3%;
 	    color: #676766;
 	}
+	hr {
+		&.graphic-hr {
+			width: 0px;
+		    border: 7px solid #fff;
+		    border-radius: 50px;
+		    padding: 10px;
+		    background: @medBlue;
+		    margin: auto;
+		    position: absolute;
+    		left: 50vw;
+    		margin-left: -10px;
+    		z-index: 101;
+		    &.graphic-hr--open {
+		    	margin-top: -36px;
+		    }
+		    &.graphic-hr--close {
+		    	margin-top: -17px;
+		    }
+		}
+	}
 
 	/* Forms */
 	form {
@@ -378,6 +401,24 @@ html body {
 	/* mobile stuff, overridden by media query in fore-desktop where needed */
 	.center-sm {
 		text-align: center;
+	}
+
+	/* Images */
+	.hero-image {
+	    background-image: url(../img/hero-image.jpg);
+	    background-size: cover;
+	    background-position: center;
+	    height: 100vh;
+	}
+	.hero-text {
+	    display: inline-block;
+	    font-size: 14pt;
+	    line-height: 10pt;
+	    position: relative;
+	    top: 70vh;
+	    left: 15vw;
+	    color: #F8F8F8;
+	    border-bottom: 5px solid #2581C4;
 	}
 
 }

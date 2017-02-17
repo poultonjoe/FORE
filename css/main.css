@@ -298,28 +298,6 @@ textarea {
 }
 
 
-/* ==========================================================================
-   Hero
-   ========================================================================== */
-
-.hero-image {
-    background-image: url(../img/Scott-Hend.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-}
-
-.hero-text {
-    display: inline-block;
-    font-size: 14pt;
-    line-height: 10pt;
-    position: relative;
-    top: 70vh;
-    left: 15vw;
-    color: #F8F8F8;
-    border-bottom: 5px solid #2581C4;
-
-}
 
 /* ==========================================================================
    Links & Buttons
