@@ -290,6 +290,9 @@ html body hr.graphic-hr.graphic-hr--open {
 html body hr.graphic-hr.graphic-hr--close {
   margin-top: -17px;
 }
+html body hr.graphic-hr.graphic-hr--grey {
+  border: 7px solid #F2F2F2;
+}
 html body form input,
 html body form textarea,
 html body form select {

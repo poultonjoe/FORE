@@ -9,6 +9,7 @@
 @lightBlue: #88D0E9;
 @medBlue: #2c82c2;
 @darkBlue: #2d2e83;
+@lightGrey: #F2F2F2;
 
 html body {
 	text-align: center;
@@ -144,7 +145,7 @@ html body {
 	    }
 	}
 	.index-container-grey {
-	    background-color: #F2F2F2;
+	    background-color: @lightGrey;
 	    padding-top: 2%;
 	    padding-bottom: 2%;
 	    height: auto;
@@ -293,6 +294,9 @@ html body {
 		    }
 		    &.graphic-hr--close {
 		    	margin-top: -17px;
+		    }
+		    &.graphic-hr--grey {
+		    	border: 7px solid @lightGrey;
 		    }
 		}
 	}
