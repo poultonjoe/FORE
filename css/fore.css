@@ -18,6 +18,7 @@ html body header.row {
 }
 html body header.row #logo-link img {
   width: 170px;
+  height: auto;
 }
 html body header.row li {
   float: right;
@@ -391,8 +392,8 @@ html body .hero-text {
   font-size: 14pt;
   line-height: 10pt;
   position: relative;
-  top: 70vh;
-  left: 15vw;
+  top: 80vh;
+  left: 40vw;
   color: #F8F8F8;
   border-bottom: 5px solid #2581C4;
 }
