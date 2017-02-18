@@ -15,12 +15,23 @@ html body {
 	text-align: center;
 
 	/* Header & nav */
+	.logo-link {
+		img {
+			width: 170px;
+			height: 50px;
+		    width: auto;
+		    display: inline-block;
+		}
+	}
 	header.row {
 		padding-top: 0; 
-		#logo-link {
-			img {
-				width: 170px;
-			}
+		.fore-logo {
+		    float: left;
+		    position: fixed;
+		    padding-left: 5%;
+		    padding-top: 10px;
+		    z-index: 10001;
+		    top: 20px;
 		}
 		li {
 		    float: right;
@@ -48,8 +59,8 @@ html body {
 		    height: 60px;
 		    background-color:transparent; 
 		    position: fixed;
-		    left: 0;
-		    top: 0;
+		    left: -60px;
+		    top: 20px;
 		    width: 100%;
 		    margin: auto; 
 		    ul {
@@ -138,7 +149,6 @@ html body {
 	    	color: #fff;
 	    }
 	    a {
-	    	text-decoration: underline;
 	    	&.button {	
 	    		text-decoration: none;
 	    	}
@@ -194,6 +204,9 @@ html body {
 		&.no-pad {
 			padding: 0 30px;
 		}
+		&.padding-wide {
+			padding: 20px 80px;
+		}
 	}
 	.stacked-content-sm {
 		h1 {
@@ -214,13 +227,17 @@ html body {
 	}
 	
 	footer {
+		background: @lightGrey;
 		.footer-menu {
 			li {
-				padding: 20px 
+				padding: 20px;
+				a {
+					text-transform: uppercase;
+				}
 			}
-			.nav-logo-inline {
-
-			}
+		}
+		a {
+			color: #000;
 		}
 	}
 
@@ -246,6 +263,7 @@ html body {
 		color: #000;
 	}
 	a {
+		text-decoration: none;
 		&:hover {
 			text-decoration: underline;
 		}
@@ -254,7 +272,7 @@ html body {
 		font-size: @font-super-tiny;
 	}
 	.narrow-text {
-		width: 50%;
+		width: 60%;
 		margin: auto;
 	}
 	.text-blue, .text-blue p {
@@ -375,12 +393,14 @@ html body {
 			}
 		}
 		.slick-arrow {
-			color: @lightBlue;
+			color: @medBlue;
 			border-radius: 50px;
 			border: 3px solid;
 			padding: 15px;
+			top: 30%;
+			opacity: 1;
 			&:before {
-				color: @lightBlue;
+				color: @medBlue;
 				top: 20%;
 			    position: absolute;
 			    text-align: center;
@@ -388,10 +408,13 @@ html body {
 			    font-weight: bold;
 			}
 			&.slick-prev:before {
-				content: "⏴";
+				content: "◀";
+				opacity: 1;
 			}
 			&.slick-next:before {
-				content: "⏵";
+				content: "▶";
+				text-indent: 3px;
+				opacity: 1;
 			}
 		}
 	}

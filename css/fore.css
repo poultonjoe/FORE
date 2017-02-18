@@ -12,12 +12,23 @@ html body {
   /* mobile stuff, overridden by media query in fore-desktop where needed */
   /* Images */
 }
+html body .logo-link img {
+  width: 170px;
+  height: 50px;
+  width: auto;
+  display: inline-block;
+}
 html body header.row {
   padding-top: 0;
   /* mobile specific nav */
 }
-html body header.row #logo-link img {
-  width: 170px;
+html body header.row .fore-logo {
+  float: left;
+  position: fixed;
+  padding-left: 5%;
+  padding-top: 10px;
+  z-index: 10001;
+  top: 20px;
 }
 html body header.row li {
   float: right;
@@ -46,8 +57,8 @@ html body header.row nav.top-menu {
   height: 60px;
   background-color: transparent;
   position: fixed;
-  left: 0;
-  top: 0;
+  left: -60px;
+  top: 20px;
   width: 100%;
   margin: auto;
 }
@@ -133,9 +144,6 @@ html body .index-container-blue address,
 html body .index-container-blue p {
   color: #fff;
 }
-html body .index-container-blue a {
-  text-decoration: underline;
-}
 html body .index-container-blue a.button {
   text-decoration: none;
 }
@@ -188,6 +196,9 @@ html body .row.root {
 html body .row.no-pad {
   padding: 0 30px;
 }
+html body .row.padding-wide {
+  padding: 20px 80px;
+}
 html body .stacked-content-sm h1 {
   margin: 25px 0 0 0;
 }
@@ -207,8 +218,17 @@ html body .stacked-content-sm .row {
 html body .stacked-content-sm .buttons-container {
   margin-top: 15px;
 }
+html body footer {
+  background: #F2F2F2;
+}
 html body footer .footer-menu li {
   padding: 20px;
+}
+html body footer .footer-menu li a {
+  text-transform: uppercase;
+}
+html body footer a {
+  color: #000;
 }
 html body h1,
 html body h2,
@@ -238,6 +258,9 @@ html body p {
   font-size: 14px;
   color: #000;
 }
+html body a {
+  text-decoration: none;
+}
 html body a:hover {
   text-decoration: underline;
 }
@@ -245,7 +268,7 @@ html body .small-text {
   font-size: 11px;
 }
 html body .narrow-text {
-  width: 50%;
+  width: 60%;
   margin: auto;
 }
 html body .text-blue,
@@ -354,13 +377,15 @@ html body .carousel .slick-current .main-content {
   display: block;
 }
 html body .carousel .slick-arrow {
-  color: #88D0E9;
+  color: #2c82c2;
   border-radius: 50px;
   border: 3px solid;
   padding: 15px;
+  top: 30%;
+  opacity: 1;
 }
 html body .carousel .slick-arrow:before {
-  color: #88D0E9;
+  color: #2c82c2;
   top: 20%;
   position: absolute;
   text-align: center;
@@ -368,10 +393,13 @@ html body .carousel .slick-arrow:before {
   font-weight: bold;
 }
 html body .carousel .slick-arrow.slick-prev:before {
-  content: "⏴";
+  content: "◀";
+  opacity: 1;
 }
 html body .carousel .slick-arrow.slick-next:before {
-  content: "⏵";
+  content: "▶";
+  text-indent: 3px;
+  opacity: 1;
 }
 html body #map {
   width: auto;
@@ -422,7 +450,8 @@ html body .hero-text {
     text-align: left;
   }
   html body .split-content-md h1 {
-    margin: 0;
+    margin: 30px 0 0 0;
+    padding: 0;
   }
   html body .split-content-md h2,
   html body .split-content-md h3,
@@ -433,7 +462,7 @@ html body .hero-text {
     padding-top: 0;
   }
   html body .split-content-md .row {
-    padding-bottom: 50px;
+    padding-bottom: 30px;
   }
   html body .split-content-md .row:first-child {
     padding-bottom: 0px;

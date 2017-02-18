@@ -221,11 +221,6 @@ textarea {
         text-shadow: none !important;
     }
 
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-
     a[href]:after {
         content: " (" attr(href) ")";
     }
@@ -285,18 +280,6 @@ textarea {
 .content {
     margin-top: 40px; /* Add a top margin to avoid content overlay */
 }
-
-.fore-logo {
-    height: 50px;
-    width: auto;
-    display: inline-block;
-    float: left;
-    position: fixed;
-    padding-left: 5%;
-    padding-top: 10px;
-    z-index: 10001;
-}
-
 
 
 /* ==========================================================================
