@@ -67,6 +67,7 @@ html body header.row nav.top-menu ul {
   width: 96%;
   margin: auto;
   float: left;
+  margin-left: -30px;
 }
 html body header.row nav.top-menu.active {
   background: #fff;
@@ -425,6 +426,29 @@ html body .hero-text {
   left: 15vw;
   color: #F8F8F8;
   border-bottom: 5px solid #2581C4;
+}
+@media (max-width: 780px) {
+  html body .container {
+    padding: 0;
+  }
+  html body .row.padding-wide {
+    padding: 20px 10px;
+  }
+  html body .row.split-content-box {
+    padding: 10px;
+  }
+  html body article {
+    width: 349px;
+    margin: auto;
+    text-align: left;
+  }
+  html body footer .footer-menu li {
+    padding: 5px;
+  }
+  html body footer .nav-logo-inline {
+    display: block;
+    clear: both;
+  }
 }
 @media (min-width: 780px) {
   html body {
