@@ -28,7 +28,7 @@ html body header.row .fore-logo {
   padding-left: 5%;
   padding-top: 10px;
   z-index: 10001;
-  top: 20px;
+  left: 90px;
 }
 html body header.row li {
   float: right;
@@ -49,22 +49,24 @@ html body header.row ul {
   list-style-type: none;
 }
 html body header.row nav.top-menu {
+  padding-top: 20px;
   display: none;
   /* hidden for mobile*/
   overflow: hidden;
   z-index: 10000;
   transition: all 0.2s ease-in-out;
-  height: 60px;
+  height: 90px;
   background-color: transparent;
   position: fixed;
-  left: -60px;
-  top: 20px;
-  width: 100%;
+  left: 0;
+  width: 100vw;
   margin: auto;
+  top: 0;
 }
 html body header.row nav.top-menu ul {
   width: 96%;
   margin: auto;
+  float: left;
 }
 html body header.row nav.top-menu.active {
   background: #fff;
