@@ -78,6 +78,10 @@ html body {
 			}
 		}
 		/* mobile specific nav */
+		nav.top-menu {
+			background: none;
+			transition: linear 0.2s;
+		}
 		&.headerMobileActive {
 			position: fixed;
 			width: 100%;
@@ -88,22 +92,34 @@ html body {
 				display: block;
 				height: 100%;
 				width: 100%;
+				background: rgba(255,255,255,0.85);
+				.logo-link {
+					text-align: center;
+					img {
+						position: relative;
+					    float: none;
+					    left: inherit;
+					    margin: 0;
+					    padding: 0;
+					}
+				}
 				ul {
 					display: block;
 					text-align: left;
 					padding: 20px;
-					margin-top: 40px;
+					margin-top: 110px;
 					width: 220px;
-					margin-left: 15px;
+					margin: auto;
+    				float: none;
 					li {
 						display: block;
-						font-size: @font-med;
+						font-size: @font-large;
 						float: none;
 						margin-bottom: 20px;
 						a {
 							border: 3px solid;
 							border-radius: 4px;
-							padding: 25px 20px;
+							padding: 20px 15px;
 							display: block;
 							text-align: center;
 						}
@@ -114,13 +130,15 @@ html body {
 		nav.mobile {
 			display: block;
 		    text-align: left;
-    		left: 30px;
-    		position: absolute;
+		    right: 20px;
+		    position: absolute;
+		    top: 10px;
 			.box-shadow-menu {
-				position: relative;
+				position: fixed;
 				padding-left: 1.25em;
 				font-size: 40px;
 				z-index: 10002;
+				right: 10px;
 			}
 			.box-shadow-menu:before {
 				content: "";
@@ -203,6 +221,7 @@ html body {
 		&.root {
 			max-width: 1100px;
 			margin: auto;
+			padding-bottom: 40px;
 		}
 		&.no-pad {
 			padding: 0 30px;
@@ -233,7 +252,7 @@ html body {
 		background: @lightGrey;
 		.footer-menu {
 			li {
-				padding: 20px;
+				padding: 15px;
 				a {
 					text-transform: uppercase;
 				}
@@ -445,10 +464,11 @@ html body {
 	    font-size: 14pt;
 	    line-height: 10pt;
 	    position: relative;
-	    top: 70vh;
-	    left: 15vw;
 	    color: #F8F8F8;
 	    border-bottom: 5px solid #2581C4;
+	    top: 16vh;
+    	left: 43vw;
+    	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
 	}
 
 }

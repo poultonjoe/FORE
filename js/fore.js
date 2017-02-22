@@ -43,7 +43,7 @@ $(document).ready(function(){
 					slidesToScroll: 1,
 					centerMode: true,
 					centerPadding: '60px',
-					arrows: false,
+					arrows: true,
 					dots: true		   
 				}
 		    }]
