@@ -6,6 +6,9 @@
 			nav.top-menu {
 				display: inline-block;
 				position: fixed;
+				ul#top-menu--nav-list {
+					display: block;
+				}
 			}
 			nav.mobile {
 				display: none;
@@ -50,6 +53,15 @@
 		}
 		.white-sub {
 		    max-width: 70%;
+		}
+		.carousel {
+			.slick-current {
+				.main-content {
+					display: block;
+					width: 380px;
+	    			margin-left: -78px;
+				}
+			}
 		}
 	}
 }

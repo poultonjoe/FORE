@@ -529,6 +529,9 @@ html body .hero-text {
     display: inline-block;
     position: fixed;
   }
+  html body header.row nav.top-menu ul#top-menu--nav-list {
+    display: block;
+  }
   html body header.row nav.mobile {
     display: none;
   }
@@ -572,5 +575,10 @@ html body .hero-text {
   }
   html body .white-sub {
     max-width: 70%;
+  }
+  html body .carousel .slick-current .main-content {
+    display: block;
+    width: 380px;
+    margin-left: -78px;
   }
 }
