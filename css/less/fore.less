@@ -1,15 +1,16 @@
 /* main stylesheet. will eventually replace main.css */
 
-@media-cutoff: 780px;
+@media-cutoff: 991px;
 @font-large: 30px;
-@font-med: 22px;
+@font-med: 18px;
 @font-small: 16px;
 @font-tiny: 14px;
-@font-super-tiny: 11px;
+@font-super-tiny: 10px;
 @lightBlue: #88D0E9;
 @medBlue: #2c82c2;
 @darkBlue: #2d2e83;
 @lightGrey: #F2F2F2;
+@darkGrey: #c1c1c1;
 
 html body {
 	text-align: center;
@@ -27,7 +28,7 @@ html body {
 		padding-top: 0; 
 		.fore-logo {
 		    float: left;
-		    position: fixed;
+		    position: relative;
 		    padding-left: 5%;
 		    padding-top: 10px;
 		    z-index: 10001;
@@ -51,20 +52,21 @@ html body {
 		ul {
 		 	list-style-type: none;
 		}
-		nav.top-menu {
+		nav.top-menu  {
 			padding-top: 20px;
-			display: none; /* hidden for mobile*/
+			
 		    overflow: hidden;
 		    z-index: 10000;
 		    transition: all 0.2s ease-in-out;
 		    height: 90px;
 		    background-color:transparent; 
-		    position: fixed;
+		    position: relative;
 		    left: 0;
 		    width: 100vw;
 		    margin: auto; 
 		    top: 0;
-		    ul {
+		    ul#top-menu--nav-list {
+		    	display: none; /* hidden for mobile*/
 		    	width: 96%;
 		    	margin: auto;
 		    	float: left;
@@ -82,51 +84,7 @@ html body {
 			background: none;
 			transition: linear 0.2s;
 		}
-		&.headerMobileActive {
-			position: fixed;
-			width: 100%;
-			height: 100%;
-			background: rgba(255,255,255,0.5);
-			z-index: 10001;
-			nav.top-menu {
-				display: block;
-				height: 100%;
-				width: 100%;
-				background: rgba(255,255,255,0.85);
-				.logo-link {
-					text-align: center;
-					img {
-						position: relative;
-					    float: none;
-					    left: inherit;
-					    margin: 0;
-					    padding: 0;
-					}
-				}
-				ul {
-					display: block;
-					text-align: left;
-					padding: 20px;
-					margin-top: 110px;
-					width: 220px;
-					margin: auto;
-    				float: none;
-					li {
-						display: block;
-						font-size: @font-large;
-						float: none;
-						margin-bottom: 20px;
-						a {
-							border: 3px solid;
-							border-radius: 4px;
-							padding: 20px 15px;
-							display: block;
-							text-align: center;
-						}
-					}
-				}
-			}
-		}
+		
 		nav.mobile {
 			display: block;
 		    text-align: left;
@@ -147,10 +105,10 @@ html body {
 				top: 0.25em;
 				width: 1em;
 				height: 0.15em;
-				background: black;
+				background: @medBlue;
 				box-shadow: 
-				0 0.25em 0 0 black,
-				0 0.5em 0 0 black;
+				0 0.25em 0 0 @medBlue,
+				0 0.5em 0 0 @medBlue;
 			}
 		}
 	}
@@ -222,6 +180,11 @@ html body {
 			max-width: 1100px;
 			margin: auto;
 			padding-bottom: 40px;
+			overflow-x: hidden;
+			marg-left: 0;
+			margin-right: 0;
+			padding-left: 0;
+			padding-right: 0;
 		}
 		&.no-pad {
 			padding: 0 30px;
@@ -340,6 +303,31 @@ html body {
 		    }
 		}
 	}
+	blockquote, blockquote p {
+		font-style: italic;
+		color: @darkGrey;
+	}
+	blockquote > p {
+		position: relative;
+		&:before, &:after {
+			font-size: @font-large;
+			font-weight: bold;
+			color: @medBlue;
+			display: inline-block;
+			font-family: cursive, serif;
+			position: absolute;
+			left: -20px;
+			top: -5px;
+		}
+		&:before {
+			content:'"';
+		}
+		&:after {
+			content: '”';
+			right: -20px;
+			left: initial;
+		}
+	}
 
 	/* Forms */
 	form {
@@ -396,7 +384,7 @@ html body {
 				margin-bottom: 15px;
 			}
 			> div p {
-				width: 60%;
+				width: 80%;
 				margin: auto;
 			}
 		}
@@ -465,7 +453,7 @@ html body {
 	    line-height: 10pt;
 	    position: relative;
 	    color: #F8F8F8;
-	    border-bottom: 5px solid #2581C4;
+	    border-bottom: 5px solid @medBlue;
 	    top: 16vh;
     	left: 43vw;
     	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);

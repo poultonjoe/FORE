@@ -1,5 +1,7 @@
+var mediaBreakPoint = 991;
+
 $(window).on("scroll", function() {
-    if($(window).scrollTop() > 50) {
+    if( $(window).scrollTop() > 50 && window.innerWidth > mediaBreakPoint ) {
         $(".top-menu").addClass("active");
     } else {
         //remove the background property so it comes transparent again (defined in your css)
@@ -37,7 +39,7 @@ $(document).ready(function(){
 			centerMode: true,
   			responsive: [
 		    {
-		    	breakpoint: 780,
+		    	breakpoint: mediaBreakPoint,
 				settings: {
 					slidesToShow: 1,
 					slidesToScroll: 1,

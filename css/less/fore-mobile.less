@@ -3,6 +3,7 @@
 	html body {
 		.container {
 			padding: 0;
+			width: 100vw;
 		}
 		.row {
 			&.padding-wide {
@@ -12,8 +13,66 @@
 				padding: 10px;
 			}
 		}
+		header.row {
+			padding: 0;
+			margin: 0;
+			.logo-link .fore-logo {
+				left: -20px;
+				top: -25px;
+			}
+			.hero-image {
+				margin: 0;
+				padding: 0;
+			}
+			.hero-text {
+				top: 420px;
+    			right: -110px;
+    			left: inherit;
+			}
+		}
+		header.row.headerMobileActive {
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			background: rgba(255,255,255,0.5);
+			z-index: 10001;
+			nav.top-menu {
+				display: block;
+			    height: 100vh;
+			    width: 100vw;
+			    background: rgba(255, 255, 255, 0.85);
+			    left: 0;
+			    position: absolute;
+			    top: 0;
+			    .logo-link {
+			    	display: none;
+			    }
+				ul#top-menu--nav-list {
+					display: block;
+					text-align: left;
+					padding: 20px;
+					margin-top: 130px;
+					width: 220px;
+					margin: auto;
+    				float: none;
+					li {
+						display: block;
+						font-size: @font-large;
+						float: none;
+						margin-bottom: 20px;
+						a {
+							border: 3px solid;
+							border-radius: 4px;
+							padding: 20px 15px;
+							display: block;
+							text-align: center;
+						}
+					}
+				}
+			}
+		}
 		article {
-			width: 349px;
+			width: 80%;
 		    margin: auto;
 		    text-align: left;
 		}
@@ -21,6 +80,10 @@
 			.footer-menu {
 				li {
 					padding: 5px;
+					display: block;
+					a {
+						font-weight: bold;
+					}
 				}
 			}
 			.nav-logo-inline {

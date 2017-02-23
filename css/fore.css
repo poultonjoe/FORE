@@ -24,7 +24,7 @@ html body header.row {
 }
 html body header.row .fore-logo {
   float: left;
-  position: fixed;
+  position: relative;
   padding-left: 5%;
   padding-top: 10px;
   z-index: 10001;
@@ -43,27 +43,27 @@ html body header.row li a {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 11px;
+  font-size: 10px;
 }
 html body header.row ul {
   list-style-type: none;
 }
 html body header.row nav.top-menu {
   padding-top: 20px;
-  display: none;
-  /* hidden for mobile*/
   overflow: hidden;
   z-index: 10000;
   transition: all 0.2s ease-in-out;
   height: 90px;
   background-color: transparent;
-  position: fixed;
+  position: relative;
   left: 0;
   width: 100vw;
   margin: auto;
   top: 0;
 }
-html body header.row nav.top-menu ul {
+html body header.row nav.top-menu ul#top-menu--nav-list {
+  display: none;
+  /* hidden for mobile*/
   width: 96%;
   margin: auto;
   float: left;
@@ -78,51 +78,6 @@ html body header.row nav.top-menu.active {
 html body header.row nav.top-menu {
   background: none;
   transition: linear 0.2s;
-}
-html body header.row.headerMobileActive {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.5);
-  z-index: 10001;
-}
-html body header.row.headerMobileActive nav.top-menu {
-  display: block;
-  height: 100%;
-  width: 100%;
-  background: rgba(255, 255, 255, 0.85);
-}
-html body header.row.headerMobileActive nav.top-menu .logo-link {
-  text-align: center;
-}
-html body header.row.headerMobileActive nav.top-menu .logo-link img {
-  position: relative;
-  float: none;
-  left: inherit;
-  margin: 0;
-  padding: 0;
-}
-html body header.row.headerMobileActive nav.top-menu ul {
-  display: block;
-  text-align: left;
-  padding: 20px;
-  margin-top: 110px;
-  width: 220px;
-  margin: auto;
-  float: none;
-}
-html body header.row.headerMobileActive nav.top-menu ul li {
-  display: block;
-  font-size: 30px;
-  float: none;
-  margin-bottom: 20px;
-}
-html body header.row.headerMobileActive nav.top-menu ul li a {
-  border: 3px solid;
-  border-radius: 4px;
-  padding: 20px 15px;
-  display: block;
-  text-align: center;
 }
 html body header.row nav.mobile {
   display: block;
@@ -145,9 +100,8 @@ html body header.row nav.mobile .box-shadow-menu:before {
   top: 0.25em;
   width: 1em;
   height: 0.15em;
-  background: black;
-  box-shadow: 0 0.25em 0 0 black,
-				0 0.5em 0 0 black;
+  background: #2c82c2;
+  box-shadow: 0 0.25em 0 0 #2c82c2, 0 0.5em 0 0 #2c82c2;
 }
 html body .index-container-blue {
   padding-top: 2%;
@@ -214,6 +168,11 @@ html body .row.root {
   max-width: 1100px;
   margin: auto;
   padding-bottom: 40px;
+  overflow-x: hidden;
+  marg-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 html body .row.no-pad {
   padding: 0 30px;
@@ -269,7 +228,7 @@ html body h1 {
 }
 html body h2,
 html body h3 {
-  font-size: 22px;
+  font-size: 18px;
 }
 html body h4,
 html body h5,
@@ -287,7 +246,7 @@ html body a:hover {
   text-decoration: underline;
 }
 html body .small-text {
-  font-size: 11px;
+  font-size: 10px;
 }
 html body .narrow-text {
   width: 60%;
@@ -338,6 +297,33 @@ html body hr.graphic-hr.graphic-hr--close {
 html body hr.graphic-hr.graphic-hr--grey {
   border: 7px solid #F2F2F2;
 }
+html body blockquote,
+html body blockquote p {
+  font-style: italic;
+  color: #c1c1c1;
+}
+html body blockquote > p {
+  position: relative;
+}
+html body blockquote > p:before,
+html body blockquote > p:after {
+  font-size: 30px;
+  font-weight: bold;
+  color: #2c82c2;
+  display: inline-block;
+  font-family: cursive, serif;
+  position: absolute;
+  left: -20px;
+  top: -5px;
+}
+html body blockquote > p:before {
+  content: '"';
+}
+html body blockquote > p:after {
+  content: '”';
+  right: -20px;
+  left: initial;
+}
 html body form input,
 html body form textarea,
 html body form select {
@@ -383,7 +369,7 @@ html body .carousel.single img {
   margin-bottom: 15px;
 }
 html body .carousel.single > div p {
-  width: 60%;
+  width: 80%;
   margin: auto;
 }
 html body .carousel > div {
@@ -442,14 +428,15 @@ html body .hero-text {
   line-height: 10pt;
   position: relative;
   color: #F8F8F8;
-  border-bottom: 5px solid #2581C4;
+  border-bottom: 5px solid #2c82c2;
   top: 16vh;
   left: 43vw;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
-@media (max-width: 780px) {
+@media (max-width: 991px) {
   html body .container {
     padding: 0;
+    width: 100vw;
   }
   html body .row.padding-wide {
     padding: 20px 10px;
@@ -457,13 +444,75 @@ html body .hero-text {
   html body .row.split-content-box {
     padding: 10px;
   }
+  html body header.row {
+    padding: 0;
+    margin: 0;
+  }
+  html body header.row .logo-link .fore-logo {
+    left: -20px;
+    top: -25px;
+  }
+  html body header.row .hero-image {
+    margin: 0;
+    padding: 0;
+  }
+  html body header.row .hero-text {
+    top: 420px;
+    right: -110px;
+    left: inherit;
+  }
+  html body header.row.headerMobileActive {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    z-index: 10001;
+  }
+  html body header.row.headerMobileActive nav.top-menu {
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(255, 255, 255, 0.85);
+    left: 0;
+    position: absolute;
+    top: 0;
+  }
+  html body header.row.headerMobileActive nav.top-menu .logo-link {
+    display: none;
+  }
+  html body header.row.headerMobileActive nav.top-menu ul#top-menu--nav-list {
+    display: block;
+    text-align: left;
+    padding: 20px;
+    margin-top: 130px;
+    width: 220px;
+    margin: auto;
+    float: none;
+  }
+  html body header.row.headerMobileActive nav.top-menu ul#top-menu--nav-list li {
+    display: block;
+    font-size: 30px;
+    float: none;
+    margin-bottom: 20px;
+  }
+  html body header.row.headerMobileActive nav.top-menu ul#top-menu--nav-list li a {
+    border: 3px solid;
+    border-radius: 4px;
+    padding: 20px 15px;
+    display: block;
+    text-align: center;
+  }
   html body article {
-    width: 349px;
+    width: 80%;
     margin: auto;
     text-align: left;
   }
   html body footer .footer-menu li {
     padding: 5px;
+    display: block;
+  }
+  html body footer .footer-menu li a {
+    font-weight: bold;
   }
   html body footer .nav-logo-inline {
     display: block;
@@ -471,16 +520,20 @@ html body .hero-text {
     margin-bottom: 20px;
   }
 }
-@media (min-width: 780px) {
+@media (min-width: 991px) {
   html body {
     text-align: left;
     /* rig layout of items without upsetting data flow */
   }
   html body header.row nav.top-menu {
     display: inline-block;
+    position: fixed;
   }
   html body header.row nav.mobile {
     display: none;
+  }
+  html body header.row .fore-logo {
+    position: fixed;
   }
   html body .item-left {
     float: left;
