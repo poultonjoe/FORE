@@ -79,38 +79,6 @@ html body {
 			    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
 			}
 		}
-		/* mobile specific nav */
-		nav.top-menu {
-			background: none;
-			transition: linear 0.2s;
-		}
-		
-		nav.mobile {
-			display: block;
-		    text-align: left;
-		    right: 20px;
-		    position: absolute;
-		    top: 10px;
-			.box-shadow-menu {
-				position: fixed;
-				padding-left: 1.25em;
-				font-size: 40px;
-				z-index: 10002;
-				right: 10px;
-			}
-			.box-shadow-menu:before {
-				content: "";
-				position: absolute;
-				left: 0;
-				top: 0.25em;
-				width: 1em;
-				height: 0.15em;
-				background: @medBlue;
-				box-shadow: 
-				0 0.25em 0 0 @medBlue,
-				0 0.5em 0 0 @medBlue;
-			}
-		}
 	}
 
 	/* Containers */
@@ -359,7 +327,7 @@ html body {
 			background: #88D0E9;
 		}
 	}
-	.button {
+	.button, input[type="submit"] {
 		background: none;
 		color: #fff;
 		display: inline-block;
@@ -372,6 +340,12 @@ html body {
 			background: @lightBlue;
 			text-decoration: none;
 		}
+	}
+	.button-right {
+		text-align: right;
+	}
+	.btn-auto-width {
+		width: auto;
 	}
 
 	/* Carousels */
@@ -459,6 +433,27 @@ html body {
     	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
 	}
 
+	/* social links */
+	.social-links-list {
+		.social-links-list--fb, .social-links-list--tw, .social-links-list--ig {
+			display: block;
+			width: 35px;
+			height: 35px;
+			font-size: 0;
+		}
+		.social-links-list--fb {
+			background: url(../img/social/fb@2x.png) no-repeat;
+			background-size: contain;
+		}
+		.social-links-list--tw {
+			background: url(../img/social/twitter@2x.png) no-repeat;
+			background-size: contain;
+		}
+		.social-links-list--ig {
+			background: url(../img/social/ig@2x.png) no-repeat;
+			background-size: contain;
+		}
+	}
 }
 
 @import "fore-mobile.less";

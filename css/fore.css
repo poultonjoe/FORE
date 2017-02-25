@@ -11,6 +11,7 @@ html body {
   /* 3rd Party */
   /* mobile stuff, overridden by media query in fore-desktop where needed */
   /* Images */
+  /* social links */
 }
 html body .logo-link img {
   width: 170px;
@@ -20,7 +21,6 @@ html body .logo-link img {
 }
 html body header.row {
   padding-top: 0;
-  /* mobile specific nav */
 }
 html body header.row .fore-logo {
   float: left;
@@ -74,34 +74,6 @@ html body header.row nav.top-menu.active {
   -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
-}
-html body header.row nav.top-menu {
-  background: none;
-  transition: linear 0.2s;
-}
-html body header.row nav.mobile {
-  display: block;
-  text-align: left;
-  right: 20px;
-  position: absolute;
-  top: 10px;
-}
-html body header.row nav.mobile .box-shadow-menu {
-  position: fixed;
-  padding-left: 1.25em;
-  font-size: 40px;
-  z-index: 10002;
-  right: 10px;
-}
-html body header.row nav.mobile .box-shadow-menu:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0.25em;
-  width: 1em;
-  height: 0.15em;
-  background: #2c82c2;
-  box-shadow: 0 0.25em 0 0 #2c82c2, 0 0.5em 0 0 #2c82c2;
 }
 html body .index-container-blue {
   padding-top: 2%;
@@ -346,7 +318,8 @@ html body .buttons-container.light .button {
   border: 0;
   background: #88D0E9;
 }
-html body .button {
+html body .button,
+html body input[type="submit"] {
   background: none;
   color: #fff;
   display: inline-block;
@@ -356,9 +329,16 @@ html body .button {
   margin-right: 10px;
   transition: linear 0.2s;
 }
-html body .button:hover {
+html body .button:hover,
+html body input[type="submit"]:hover {
   background: #88D0E9;
   text-decoration: none;
+}
+html body .button-right {
+  text-align: right;
+}
+html body .btn-auto-width {
+  width: auto;
 }
 html body .carousel {
   padding: 40px 0;
@@ -433,6 +413,26 @@ html body .hero-text {
   left: 43vw;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
+html body .social-links-list .social-links-list--fb,
+html body .social-links-list .social-links-list--tw,
+html body .social-links-list .social-links-list--ig {
+  display: block;
+  width: 35px;
+  height: 35px;
+  font-size: 0;
+}
+html body .social-links-list .social-links-list--fb {
+  background: url(../img/social/fb@2x.png) no-repeat;
+  background-size: contain;
+}
+html body .social-links-list .social-links-list--tw {
+  background: url(../img/social/twitter@2x.png) no-repeat;
+  background-size: contain;
+}
+html body .social-links-list .social-links-list--ig {
+  background: url(../img/social/ig@2x.png) no-repeat;
+  background-size: contain;
+}
 @media (max-width: 991px) {
   html body .container {
     padding: 0;
@@ -442,11 +442,12 @@ html body .hero-text {
     padding: 20px 10px;
   }
   html body .row.split-content-box {
-    padding: 10px;
+    padding: 10px 10px 40px 10px;
   }
   html body header.row {
     padding: 0;
     margin: 0;
+    /* mobile specific nav */
   }
   html body header.row .logo-link .fore-logo {
     left: -20px;
@@ -460,6 +461,36 @@ html body .hero-text {
     top: 420px;
     right: -110px;
     left: inherit;
+  }
+  html body header.row nav.top-menu {
+    background: none;
+    transition: linear 0.2s;
+  }
+  html body header.row nav.mobile {
+    display: block;
+    text-align: left;
+    right: 20px;
+    position: absolute;
+    top: 10px;
+  }
+  html body header.row nav.mobile .box-shadow-menu {
+    position: fixed;
+    padding-left: 1.25em;
+    font-size: 40px;
+    z-index: 10002;
+    right: 10px;
+    height: 50px;
+    width: 50px;
+  }
+  html body header.row nav.mobile .box-shadow-menu:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.25em;
+    width: 1em;
+    height: 0.15em;
+    background: #2c82c2;
+    box-shadow: 0 0.25em 0 0 #2c82c2, 0 0.5em 0 0 #2c82c2;
   }
   html body header.row.headerMobileActive {
     position: fixed;
@@ -502,16 +533,41 @@ html body .hero-text {
     display: block;
     text-align: center;
   }
+  html body .stacked-content-sm h1 {
+    margin: 25px 0 20px 0;
+  }
+  html body .inline-list--mobile-shrink li {
+    width: 95px;
+    padding: 10px 5px;
+  }
+  html body .inline-list--mobile-shrink li img {
+    width: 100%;
+    padding: 0;
+  }
+  html body .index-container-grey--center-text-small-img .events-title {
+    text-align: center;
+    padding: 20px 0 30px 0;
+    width: 80%;
+    margin: auto;
+  }
+  html body .index-container-grey--center-text-small-img .index-container-grey--center-text-small-img--img {
+    text-align: center;
+  }
+  html body .index-container-grey--center-text-small-img .index-container-grey--center-text-small-img--img img {
+    height: 150px;
+    width: auto;
+    margin: -10px auto 5px auto;
+  }
   html body article {
     width: 80%;
     margin: auto;
     text-align: left;
   }
-  html body footer .footer-menu li {
+  html body footer .footer-menu .stacked-list-mobile li {
     padding: 5px;
     display: block;
   }
-  html body footer .footer-menu li a {
+  html body footer .footer-menu .stacked-list-mobile li a {
     font-weight: bold;
   }
   html body footer .nav-logo-inline {
