@@ -141,8 +141,6 @@ html body .row.root {
   margin: auto;
   padding-bottom: 40px;
   overflow-x: hidden;
-  marg-left: 0;
-  margin-right: 0;
   padding-left: 0;
   padding-right: 0;
 }
@@ -182,6 +180,12 @@ html body footer .footer-menu li a {
 }
 html body footer a {
   color: #000;
+}
+html body footer a:hover {
+  color: #2d2e83;
+}
+html body footer .fore-logo {
+  height: 35px;
 }
 html body h1,
 html body h2,
@@ -257,7 +261,7 @@ html body hr.graphic-hr {
   margin: auto;
   position: absolute;
   left: 50vw;
-  margin-left: -10px;
+  margin-left: -15px;
   z-index: 101;
 }
 html body hr.graphic-hr.graphic-hr--open {
@@ -268,6 +272,9 @@ html body hr.graphic-hr.graphic-hr--close {
 }
 html body hr.graphic-hr.graphic-hr--grey {
   border: 7px solid #F2F2F2;
+}
+html body blockquote {
+  border-left: 0;
 }
 html body blockquote,
 html body blockquote p {
@@ -425,12 +432,24 @@ html body .social-links-list .social-links-list--fb {
   background: url(../img/social/fb@2x.png) no-repeat;
   background-size: contain;
 }
+html body .social-links-list .social-links-list--fb:hover {
+  background: url(../img/social/fb-hover@2x.png) no-repeat;
+  background-size: contain;
+}
 html body .social-links-list .social-links-list--tw {
   background: url(../img/social/twitter@2x.png) no-repeat;
   background-size: contain;
 }
+html body .social-links-list .social-links-list--tw:hover {
+  background: url(../img/social/twitter-hover@2x.png) no-repeat;
+  background-size: contain;
+}
 html body .social-links-list .social-links-list--ig {
   background: url(../img/social/ig@2x.png) no-repeat;
+  background-size: contain;
+}
+html body .social-links-list .social-links-list--ig:hover {
+  background: url(../img/social/ig-hover@2x.png) no-repeat;
   background-size: contain;
 }
 @media (max-width: 991px) {
@@ -450,8 +469,8 @@ html body .social-links-list .social-links-list--ig {
     /* mobile specific nav */
   }
   html body header.row .logo-link .fore-logo {
-    left: -20px;
-    top: -25px;
+    left: -7px;
+    top: -15px;
   }
   html body header.row .hero-image {
     margin: 0;
@@ -461,6 +480,10 @@ html body .social-links-list .social-links-list--ig {
     top: 420px;
     right: -110px;
     left: inherit;
+  }
+  html body header.row .hero-text h1 {
+    width: 190px;
+    border-bottom: 0;
   }
   html body header.row nav.top-menu {
     background: none;
@@ -504,6 +527,7 @@ html body .social-links-list .social-links-list--ig {
     height: 100vh;
     width: 100vw;
     background: rgba(255, 255, 255, 0.85);
+    padding-top: 70px;
     left: 0;
     position: absolute;
     top: 0;
@@ -563,6 +587,9 @@ html body .social-links-list .social-links-list--ig {
     margin: auto;
     text-align: left;
   }
+  html body .mobile-centralise {
+    text-align: center;
+  }
   html body footer .footer-menu .stacked-list-mobile li {
     padding: 5px;
     display: block;
@@ -593,6 +620,13 @@ html body .social-links-list .social-links-list--ig {
   }
   html body header.row .fore-logo {
     position: fixed;
+  }
+  html body .root.index-container-grey {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  html body .desktop-fullwidth {
+    width: 100%;
   }
   html body .item-left {
     float: left;

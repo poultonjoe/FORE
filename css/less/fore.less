@@ -149,8 +149,6 @@ html body {
 			margin: auto;
 			padding-bottom: 40px;
 			overflow-x: hidden;
-			marg-left: 0;
-			margin-right: 0;
 			padding-left: 0;
 			padding-right: 0;
 		}
@@ -191,6 +189,12 @@ html body {
 		}
 		a {
 			color: #000;
+			&:hover {
+				color: @darkBlue;
+			}
+		}
+		.fore-logo {
+			height: 35px;
 		}
 	}
 
@@ -258,7 +262,7 @@ html body {
 		    margin: auto;
 		    position: absolute;
     		left: 50vw;
-    		margin-left: -10px;
+    		margin-left: -15px;
     		z-index: 101;
 		    &.graphic-hr--open {
 		    	margin-top: -36px;
@@ -270,6 +274,9 @@ html body {
 		    	border: 7px solid @lightGrey;
 		    }
 		}
+	}
+	blockquote {
+		border-left: 0;
 	}
 	blockquote, blockquote p {
 		font-style: italic;
@@ -444,14 +451,27 @@ html body {
 		.social-links-list--fb {
 			background: url(../img/social/fb@2x.png) no-repeat;
 			background-size: contain;
+			&:hover {
+				background: url(../img/social/fb-hover@2x.png) no-repeat;
+				background-size: contain;
+			}
 		}
 		.social-links-list--tw {
 			background: url(../img/social/twitter@2x.png) no-repeat;
 			background-size: contain;
+			&:hover {
+				background: url(../img/social/twitter-hover@2x.png) no-repeat;
+				background-size: contain;
+			}
 		}
 		.social-links-list--ig {
 			background: url(../img/social/ig@2x.png) no-repeat;
 			background-size: contain;
+			&:hover {
+				background: url(../img/social/ig-hover@2x.png) no-repeat;
+				background-size: contain;
+			}
+
 		}
 	}
 }
