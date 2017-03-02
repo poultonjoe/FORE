@@ -61,8 +61,34 @@ $(document).ready(function(){
     var header = $('header');
     $('nav.mobile a.menu-button').click(function(e){
     	e.preventDefault();
-    	console.log('cliked nav')
     	header.toggleClass('headerMobileActive');
+    });
 
+    // Load more widget
+    $('.load-more').each(function(i,el){
+        var el = $(el);
+        var currentElIndexShown = 0;
+        var elItems = [];
+        $('.load-more--item', el).each(function(i,elItem){
+            var elItem = $(elItem);
+            elItems.push(elItem);
+            elItem.hide();
+        });
+        showLoadMore();
+        var loadMoreButton = $('<a href="#" class="load-more--button">Load more</a>');
+        el.append(loadMoreButton);
+        loadMoreButton.on('click', function(e){
+            e.preventDefault();
+            currentElIndexShown ++;
+            showLoadMore();
+            return false;
+        });
+        function showLoadMore(){
+            elItems[currentElIndexShown].fadeIn();
+            // Hide the load more link if there's no more to load
+            if(currentElIndexShown + 1 == (elItems.length)) {
+                loadMoreButton.hide();
+            };
+        };
     });
 });
