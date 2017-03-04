@@ -75,7 +75,7 @@ $(document).ready(function(){
             elItem.hide();
         });
         showLoadMore();
-        var loadMoreButton = $('<a href="#" class="load-more--button">Load more</a>');
+        var loadMoreButton = $('<a href="#" class="load-more--button">Load more<i class="arrow arrow-down"></i></a>');
         el.append(loadMoreButton);
         loadMoreButton.on('click', function(e){
             e.preventDefault();

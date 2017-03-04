@@ -43,7 +43,7 @@ html body header.row li a {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 10px;
+  font-size: 14px;
 }
 html body header.row ul {
   list-style-type: none;
@@ -149,6 +149,9 @@ html body .row.no-pad {
 }
 html body .row.padding-wide {
   padding: 20px 80px;
+}
+html body .row.padding-wide.root {
+  padding-bottom: 60px;
 }
 html body .stacked-content-sm h1 {
   margin: 25px 0 0 0;
@@ -371,7 +374,8 @@ html body .carousel > div .main-content {
 html body .carousel .slick-current .main-content {
   display: block;
 }
-html body .carousel .slick-arrow {
+html body .slick-arrow,
+html body .arrow {
   color: #2c82c2;
   border-radius: 50px;
   border: 3px solid;
@@ -379,7 +383,8 @@ html body .carousel .slick-arrow {
   top: 30%;
   opacity: 1;
 }
-html body .carousel .slick-arrow:before {
+html body .slick-arrow:before,
+html body .arrow:before {
   color: #2c82c2;
   top: 20%;
   position: absolute;
@@ -387,14 +392,37 @@ html body .carousel .slick-arrow:before {
   left: 5px;
   font-weight: bold;
 }
-html body .carousel .slick-arrow.slick-prev:before {
+html body .slick-arrow.slick-prev:before,
+html body .arrow.slick-prev:before {
   content: "◀";
   opacity: 1;
 }
-html body .carousel .slick-arrow.slick-next:before {
+html body .slick-arrow.slick-next:before,
+html body .arrow.slick-next:before {
   content: "▶";
   text-indent: 3px;
   opacity: 1;
+}
+html body .arrow-down {
+  width: 30px;
+  height: 30px;
+}
+html body .arrow-down:after {
+  content: "▼";
+  position: relative;
+  font-size: 20px;
+  left: -10px;
+  top: -13px;
+}
+html body .load-more--button {
+  float: right;
+  font-weight: bold;
+  padding-top: 15px;
+}
+html body .load-more--button .arrow {
+  margin-left: 10px;
+  display: inline-block;
+  vertical-align: middle;
 }
 html body #map {
   width: auto;

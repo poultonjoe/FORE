@@ -46,7 +46,7 @@ html body {
 			    text-decoration: none;
 			    text-transform: uppercase;
 			    font-weight: bold;
-			    font-size: @font-super-tiny;
+			    font-size: @font-tiny;
 			}
 		}
 		ul {
@@ -157,6 +157,9 @@ html body {
 		}
 		&.padding-wide {
 			padding: 20px 80px;
+			&.root {
+				padding-bottom: 60px;
+			}
 		}
 	}
 	.stacked-content-sm {
@@ -383,30 +386,51 @@ html body {
 				display: block;
 			}
 		}
-		.slick-arrow {
+	}
+	.slick-arrow, .arrow {
+		color: @medBlue;
+		border-radius: 50px;
+		border: 3px solid;
+		padding: 15px;
+		top: 30%;
+		opacity: 1;
+		&:before {
 			color: @medBlue;
-			border-radius: 50px;
-			border: 3px solid;
-			padding: 15px;
-			top: 30%;
+			top: 20%;
+		    position: absolute;
+		    text-align: center;
+		    left: 5px;
+		    font-weight: bold;
+		}
+		&.slick-prev:before {
+			content: "◀";
 			opacity: 1;
-			&:before {
-				color: @medBlue;
-				top: 20%;
-			    position: absolute;
-			    text-align: center;
-			    left: 5px;
-			    font-weight: bold;
-			}
-			&.slick-prev:before {
-				content: "◀";
-				opacity: 1;
-			}
-			&.slick-next:before {
-				content: "▶";
-				text-indent: 3px;
-				opacity: 1;
-			}
+		}
+		&.slick-next:before {
+			content: "▶";
+			text-indent: 3px;
+			opacity: 1;
+		}
+	}
+	.arrow-down {
+		width: 30px;
+		height: 30px;
+		&:after {
+			content: "▼";
+    		position: relative;
+    		font-size: 20px;
+		    left: -10px;
+		    top: -13px;
+		}
+	}
+	.load-more--button {
+		float: right;
+		font-weight: bold;
+		padding-top: 15px;
+		.arrow {
+			margin-left: 10px;
+		    display: inline-block;
+		    vertical-align: middle;
 		}
 	}
 
