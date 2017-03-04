@@ -670,6 +670,12 @@ html body .social-links-list .social-links-list--ig:hover {
   html body .row.center-sm {
     text-align: left;
   }
+  html body .split-content-box .split-content-box--md--right {
+    padding-left: 30px;
+  }
+  html body .split-content-box .split-content-box--md--left {
+    padding-right: 20px;
+  }
   html body .split-content-md h1 {
     margin: 30px 0 0 0;
     padding: 0;
