@@ -654,6 +654,11 @@ html body .social-links-list .social-links-list--ig:hover {
     text-align: left;
     /* rig layout of items without upsetting data flow */
   }
+  html body .container {
+    width: 100%;
+    max-width: 1400px;
+    padding: 0;
+  }
   html body header.row nav.top-menu {
     display: inline-block;
     position: fixed;
