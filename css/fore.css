@@ -392,6 +392,9 @@ html body .hero-image.hero-image--3q {
 html body .hero-image.hero-image--2t {
   height: 66vh;
 }
+html body .header--no-hero-img {
+  height: 100px;
+}
 html body .hero-text {
   display: inline-block;
   font-size: 14pt;
