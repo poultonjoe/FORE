@@ -7,7 +7,6 @@ html body {
   /* Forms */
   /* Lists */
   /* Buttons */
-  /* Carousels */
   /* 3rd Party */
   /* mobile stuff, overridden by media query in fore-desktop where needed */
   /* Images */
@@ -146,6 +145,9 @@ html body .row.root {
 }
 html body .row.no-pad {
   padding: 0 30px;
+}
+html body .row.no-pad--bottom {
+  padding-bottom: 0;
 }
 html body .row.padding-wide {
   padding: 20px 80px;
@@ -350,59 +352,6 @@ html body .button-right {
 html body .btn-auto-width {
   width: auto;
 }
-html body .carousel {
-  padding: 40px 0;
-  width: 80%;
-  margin: auto;
-}
-html body .carousel.single img {
-  margin-bottom: 15px;
-}
-html body .carousel.single > div p {
-  width: 80%;
-  margin: auto;
-}
-html body .carousel > div {
-  text-align: center;
-}
-html body .carousel > div img {
-  margin: auto;
-}
-html body .carousel > div .main-content {
-  display: none;
-}
-html body .carousel .slick-current .main-content {
-  display: block;
-}
-html body .slick-arrow,
-html body .arrow {
-  color: #2c82c2;
-  border-radius: 50px;
-  border: 3px solid;
-  padding: 15px;
-  top: 30%;
-  opacity: 1;
-}
-html body .slick-arrow:before,
-html body .arrow:before {
-  color: #2c82c2;
-  top: 20%;
-  position: absolute;
-  text-align: center;
-  left: 5px;
-  font-weight: bold;
-}
-html body .slick-arrow.slick-prev:before,
-html body .arrow.slick-prev:before {
-  content: "◀";
-  opacity: 1;
-}
-html body .slick-arrow.slick-next:before,
-html body .arrow.slick-next:before {
-  content: "▶";
-  text-indent: 3px;
-  opacity: 1;
-}
 html body .arrow-down {
   width: 30px;
   height: 30px;
@@ -436,6 +385,12 @@ html body .hero-image {
   background-size: cover;
   background-position: center;
   height: 100vh;
+}
+html body .hero-image.hero-image--3q {
+  height: 75vh;
+}
+html body .hero-image.hero-image--2t {
+  height: 66vh;
 }
 html body .hero-text {
   display: inline-block;
@@ -631,6 +586,66 @@ html body .social-links-list .social-links-list--ig:hover {
     margin-bottom: 20px;
   }
 }
+/* Carousels */
+.carousel {
+  padding: 40px 0;
+  width: 80%;
+  margin: auto;
+}
+.carousel.single img {
+  margin-bottom: 15px;
+}
+.carousel.single > div p {
+  width: 80%;
+  margin: auto;
+}
+.carousel > div {
+  text-align: center;
+}
+.carousel > div img {
+  margin: auto;
+}
+.carousel > div .main-content {
+  display: none;
+}
+.carousel .slick-current .main-content {
+  display: block;
+}
+.carousel .slick-arrow,
+.arrow {
+  color: #2c82c2;
+  border-radius: 50px;
+  border: 3px solid;
+  padding: 15px;
+  top: 30%;
+  opacity: 1;
+}
+.carousel .slick-arrow:before,
+.arrow:before {
+  color: #2c82c2;
+  top: 20%;
+  position: absolute;
+  text-align: center;
+  left: 5px;
+  font-weight: bold;
+}
+.carousel .slick-arrow.slick-prev:before,
+.arrow.slick-prev:before {
+  content: "◀";
+  opacity: 1;
+}
+.carousel .slick-arrow.slick-next:before,
+.arrow.slick-next:before {
+  content: "▶";
+  text-indent: 3px;
+  opacity: 1;
+}
+.carousel.center {
+  margin: auto;
+}
+.center-multi--small-thumbnails img {
+  width: 110%;
+}
 @media (min-width: 991px) {
   html body {
     text-align: left;
@@ -705,4 +720,14 @@ html body .social-links-list .social-links-list--ig:hover {
     width: 380px;
     margin-left: -78px;
   }
+}
+html body .featured-page--content-block--grey {
+  text-align: left;
+}
+html body .desktop--text--right {
+  text-align: right;
+}
+html body .desktop--text--no-pad--top {
+  padding-top: 0;
+  margin-top: 0;
 }

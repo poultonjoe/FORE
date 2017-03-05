@@ -91,4 +91,7 @@ $(document).ready(function(){
             };
         };
     });
+
+    // Lightbox widget
+    baguetteBox.run('.light-box');
 });

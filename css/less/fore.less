@@ -155,6 +155,9 @@ html body {
 		&.no-pad {
 			padding: 0 30px;
 		}
+		&.no-pad--bottom {
+			padding-bottom: 0;
+		}
 		&.padding-wide {
 			padding: 20px 80px;
 			&.root {
@@ -357,61 +360,6 @@ html body {
 	.btn-auto-width {
 		width: auto;
 	}
-
-	/* Carousels */
-	.carousel {
-		padding: 40px 0;
-		width: 80%;
-		margin: auto;
-		&.single {
-			img {
-				margin-bottom: 15px;
-			}
-			> div p {
-				width: 80%;
-				margin: auto;
-			}
-		}
-		> div {
-			text-align: center;
-			img {
-				margin: auto;
-			}
-			.main-content {
-				display: none;
-			}
-		}
-		.slick-current {
-			.main-content {
-				display: block;
-			}
-		}
-	}
-	.slick-arrow, .arrow {
-		color: @medBlue;
-		border-radius: 50px;
-		border: 3px solid;
-		padding: 15px;
-		top: 30%;
-		opacity: 1;
-		&:before {
-			color: @medBlue;
-			top: 20%;
-		    position: absolute;
-		    text-align: center;
-		    left: 5px;
-		    font-weight: bold;
-		}
-		&.slick-prev:before {
-			content: "◀";
-			opacity: 1;
-		}
-		&.slick-next:before {
-			content: "▶";
-			text-indent: 3px;
-			opacity: 1;
-		}
-	}
 	.arrow-down {
 		width: 30px;
 		height: 30px;
@@ -451,6 +399,12 @@ html body {
 	    background-size: cover;
 	    background-position: center;
 	    height: 100vh;
+	    &.hero-image--3q {
+	    	height: 75vh;
+	    }
+	    &.hero-image--2t {
+	    	height: 66vh;
+	    }
 	}
 	.hero-text {
 	    display: inline-block;
@@ -501,4 +455,6 @@ html body {
 }
 
 @import "fore-mobile.less";
+@import "fore-carousels.less";
 @import "fore-desktop.less";
+@import "fore-feature-pages.less";

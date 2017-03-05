@@ -1,0 +1,60 @@
+/* Carousels */
+	.carousel {
+		padding: 40px 0;
+		width: 80%;
+		margin: auto;
+		&.single {
+			img {
+				margin-bottom: 15px;
+			}
+			> div p {
+				width: 80%;
+				margin: auto;
+			}
+		}
+		> div {
+			text-align: center;
+			img {
+				margin: auto;
+			}
+			.main-content {
+				display: none;
+			}
+		}
+		.slick-current {
+			.main-content {
+				display: block;
+			}
+		}
+	}
+	.carousel .slick-arrow, .arrow {
+		color: @medBlue;
+		border-radius: 50px;
+		border: 3px solid;
+		padding: 15px;
+		top: 30%;
+		opacity: 1;
+		&:before {
+			color: @medBlue;
+			top: 20%;
+		    position: absolute;
+		    text-align: center;
+		    left: 5px;
+		    font-weight: bold;
+		}
+		&.slick-prev:before {
+			content: "◀";
+			opacity: 1;
+		}
+		&.slick-next:before {
+			content: "▶";
+			text-indent: 3px;
+			opacity: 1;
+		}
+	}
+	.carousel.center {
+		margin: auto;
+	}
+	.center-multi--small-thumbnails img {
+		width: 110%;
+	}
