@@ -34,22 +34,30 @@
 		padding: 15px;
 		top: 30%;
 		opacity: 1;
+		font-family: 'slick';
 		&:before {
 			color: @medBlue;
-			top: 20%;
 		    position: absolute;
 		    text-align: center;
-		    left: 5px;
 		    font-weight: bold;
+		    font-size: 50px;
+		    top: -14px;
+		    left: 6px;
 		}
 		&.slick-prev:before {
-			content: "◀";
+			content: "‹";
 			opacity: 1;
 		}
 		&.slick-next:before {
-			content: "▶";
+			content: "›";
 			text-indent: 3px;
 			opacity: 1;
+		}
+		&:hover {
+			color: @lightBlue;
+			&:before {
+				color: @lightBlue;
+			}
 		}
 	}
 	.carousel.center {

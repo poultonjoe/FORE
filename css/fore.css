@@ -359,13 +359,17 @@ html body .btn-auto-width {
 html body .arrow-down {
   width: 30px;
   height: 30px;
+  transform: rotate(83deg);
 }
 html body .arrow-down:after {
-  content: "▼";
+  content: "›";
   position: relative;
-  font-size: 20px;
-  left: -10px;
-  top: -13px;
+  font-size: 50px;
+  top: -41px;
+  left: -6px;
+}
+html body .arrow-down i {
+  font-style: normal;
 }
 html body .load-more--button {
   float: right;
@@ -629,26 +633,36 @@ html body .social-links-list .social-links-list--ig:hover {
   padding: 15px;
   top: 30%;
   opacity: 1;
+  font-family: 'slick';
 }
 .carousel .slick-arrow:before,
 .arrow:before {
   color: #2c82c2;
-  top: 20%;
   position: absolute;
   text-align: center;
-  left: 5px;
   font-weight: bold;
+  font-size: 50px;
+  top: -14px;
+  left: 6px;
 }
 .carousel .slick-arrow.slick-prev:before,
 .arrow.slick-prev:before {
-  content: "◀";
+  content: "‹";
   opacity: 1;
 }
 .carousel .slick-arrow.slick-next:before,
 .arrow.slick-next:before {
-  content: "▶";
+  content: "›";
   text-indent: 3px;
   opacity: 1;
+}
+.carousel .slick-arrow:hover,
+.arrow:hover {
+  color: #88D0E9;
+}
+.carousel .slick-arrow:hover:before,
+.arrow:hover:before {
+  color: #88D0E9;
 }
 .carousel.center {
   margin: auto;
