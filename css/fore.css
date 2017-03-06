@@ -20,6 +20,8 @@ html body .logo-link img {
 }
 html body header.row {
   padding-top: 0;
+  width: 100%;
+  padding-right: 0;
 }
 html body header.row .fore-logo {
   float: left;
@@ -173,14 +175,17 @@ html body .stacked-content-sm .row {
 html body .stacked-content-sm .buttons-container {
   margin-top: 15px;
 }
+html body .uppercase-links {
+  text-transform: uppercase;
+}
+html body .bold-links {
+  font-weight: bold;
+}
 html body footer {
   background: #F2F2F2;
 }
 html body footer .footer-menu li {
   padding: 15px;
-}
-html body footer .footer-menu li a {
-  text-transform: uppercase;
 }
 html body footer a {
   color: #000;
@@ -737,8 +742,8 @@ html body .social-links-list .social-links-list--ig:hover {
     margin-left: -78px;
   }
   html body footer.row.root {
-    text-align: left;
-    padding-left: 21px;
+    text-align: center;
+    padding-left: 0;
   }
   html body footer.row.root .footer-menu > .row {
     padding-top: 0;
@@ -750,7 +755,7 @@ html body .social-links-list .social-links-list--ig:hover {
   html body footer.row.root .fore-logo {
     height: 50px;
     padding-right: 20px;
-    margin-left: 7px;
+    margin-left: -5px;
   }
   html body footer.row.root ul.social-links-list {
     padding: 0;
@@ -768,6 +773,18 @@ html body .social-links-list .social-links-list--ig:hover {
   html body footer.row.root ul.small-text li {
     margin-left: 0;
     padding-left: 0;
+  }
+  html body footer.row.root ul {
+    text-align: center;
+  }
+  html body .row--ul-inline-list ul {
+    display: inline-block;
+    float: none;
+    margin-right: 20px;
+    vertical-align: top;
+  }
+  html body .row--ul-inline-list--content {
+    text-align: center;
   }
 }
 html body .featured-page--content-block--grey {
