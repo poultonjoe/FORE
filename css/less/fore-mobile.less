@@ -75,6 +75,18 @@
 			height: 100%;
 			background: rgba(255,255,255,0.5);
 			z-index: 10001;
+			.menu-button {
+				&:before {
+					display: none;
+				}
+				&:after {
+					content: "X";
+					right: 14px;
+				    position: absolute;
+				    font-weight: bold;
+				    color: #337ab7;
+				}
+			}
 			nav.top-menu {
 				display: block;
 			    height: 100vh;

@@ -516,6 +516,16 @@ html body .social-links-list .social-links-list--ig:hover {
     background: rgba(255, 255, 255, 0.5);
     z-index: 10001;
   }
+  html body header.row.headerMobileActive .menu-button:before {
+    display: none;
+  }
+  html body header.row.headerMobileActive .menu-button:after {
+    content: "X";
+    right: 14px;
+    position: absolute;
+    font-weight: bold;
+    color: #337ab7;
+  }
   html body header.row.headerMobileActive nav.top-menu {
     display: block;
     height: 100vh;
