@@ -136,7 +136,6 @@ html body .row {
   padding: 20px 30px;
 }
 html body .row.root {
-  max-width: 1100px;
   margin: auto;
   padding-bottom: 40px;
   overflow-x: hidden;
@@ -656,7 +655,7 @@ html body .social-links-list .social-links-list--ig:hover {
   }
   html body .container {
     width: 100%;
-    max-width: 1400px;
+    max-width: 2000px;
     padding: 0;
   }
   html body header.row nav.top-menu {
