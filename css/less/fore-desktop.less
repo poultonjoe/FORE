@@ -13,6 +13,8 @@
 				position: fixed;
 				ul#top-menu--nav-list {
 					display: block;
+					width: 100%;
+					margin-left: 0;
 				}
 			}
 			nav.mobile {
@@ -20,7 +22,11 @@
 			}
 			.fore-logo {
 		    	position: fixed;
+		    	left: 0;
 		    }
+		}
+		.row--no-pad--top--md {
+			padding-top: 0;
 		}
 		.root.index-container-grey {
 			padding-left: 80px;
@@ -80,6 +86,39 @@
 					display: block;
 					width: 380px;
 	    			margin-left: -78px;
+				}
+			}
+		}
+		footer.row.root {
+			text-align: left;
+			padding-left: 21px;
+			.footer-menu > .row {
+				padding-top: 0;
+				padding-bottom: 0;
+			}
+			#footer--social-and-tc {
+				margin-top: -20px;
+			}
+			.fore-logo {
+				height: 50px;
+				padding-right: 20px;
+				margin-left: 7px;
+			}
+			ul.social-links-list {
+				padding: 0;
+				margin-left: 0;
+				li {
+					padding: 3px;
+					&:first-child {
+						margin-left: 0;
+					}
+				}
+			}
+			ul.small-text {
+				padding-left: 0;
+				li {
+					margin-left: 0;
+					padding-left: 0;
 				}
 			}
 		}

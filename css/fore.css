@@ -575,6 +575,9 @@ html body .social-links-list .social-links-list--ig:hover {
   html body .mobile-centralise {
     text-align: center;
   }
+  html body .desktop-fullwidth {
+    max-width: 90%;
+  }
   html body footer .footer-menu .stacked-list-mobile li {
     padding: 5px;
     display: block;
@@ -664,12 +667,18 @@ html body .social-links-list .social-links-list--ig:hover {
   }
   html body header.row nav.top-menu ul#top-menu--nav-list {
     display: block;
+    width: 100%;
+    margin-left: 0;
   }
   html body header.row nav.mobile {
     display: none;
   }
   html body header.row .fore-logo {
     position: fixed;
+    left: 0;
+  }
+  html body .row--no-pad--top--md {
+    padding-top: 0;
   }
   html body .root.index-container-grey {
     padding-left: 80px;
@@ -726,6 +735,39 @@ html body .social-links-list .social-links-list--ig:hover {
     display: block;
     width: 380px;
     margin-left: -78px;
+  }
+  html body footer.row.root {
+    text-align: left;
+    padding-left: 21px;
+  }
+  html body footer.row.root .footer-menu > .row {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  html body footer.row.root #footer--social-and-tc {
+    margin-top: -20px;
+  }
+  html body footer.row.root .fore-logo {
+    height: 50px;
+    padding-right: 20px;
+    margin-left: 7px;
+  }
+  html body footer.row.root ul.social-links-list {
+    padding: 0;
+    margin-left: 0;
+  }
+  html body footer.row.root ul.social-links-list li {
+    padding: 3px;
+  }
+  html body footer.row.root ul.social-links-list li:first-child {
+    margin-left: 0;
+  }
+  html body footer.row.root ul.small-text {
+    padding-left: 0;
+  }
+  html body footer.row.root ul.small-text li {
+    margin-left: 0;
+    padding-left: 0;
   }
 }
 html body .featured-page--content-block--grey {
