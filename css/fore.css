@@ -380,7 +380,7 @@ html body .btn-auto-width {
 html body .arrow-down {
   width: 30px;
   height: 30px;
-  transform: rotate(83deg);
+  transform: rotate(78deg);
 }
 html body .arrow-down:after {
   content: "›";
