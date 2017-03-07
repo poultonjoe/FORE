@@ -712,6 +712,11 @@ html body .social-links-list .social-links-list--ig:hover {
     display: block;
     width: 100%;
     margin-left: 0;
+    text-align: right;
+  }
+  html body header.row nav.top-menu ul#top-menu--nav-list li {
+    display: inline-block;
+    float: none;
   }
   html body header.row nav.top-menu ul#top-menu--nav-list li a {
     color: #fff;
