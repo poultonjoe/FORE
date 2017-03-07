@@ -150,6 +150,9 @@ html body .row.no-pad {
 html body .row.no-pad--bottom {
   padding-bottom: 0;
 }
+html body .row.no-pad--top {
+  padding-top: 0;
+}
 html body .row.padding-wide {
   padding: 20px 80px;
 }
@@ -275,7 +278,7 @@ html body .black-title {
   padding-bottom: 2%;
 }
 html body .partners-title {
-  padding-top: 3%;
+  padding-top: 10px;
   color: #676766;
 }
 html body hr.graphic-hr {
