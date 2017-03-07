@@ -220,6 +220,11 @@ html body h5,
 html body h6 {
   font-size: 16px;
 }
+html body h4,
+html body h5,
+html body h6 {
+  font-weight: normal;
+}
 html body p {
   font-size: 14px;
   color: #000;
