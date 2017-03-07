@@ -246,8 +246,17 @@ html body {
 	.text-blue, .text-blue p {
 		color: @lightBlue;
 	}
-	.links-blue a {
-		color: @lightBlue;
+	.links-blue {
+		a {
+			color: @lightBlue;
+		}
+		a.button, input[type="submit"] {
+			color: #fff;
+			&:hover {
+				color: @darkBlue;
+				border: 2px solid @lightBlue;
+			}
+		}
 	}
 	.text-blue {
 		h1,h2,h3,h4,h5,h6 {
@@ -354,11 +363,12 @@ html body {
 		display: inline-block;
 		padding: 3px 15px;
 		border-radius: 2px;
-		border: 2px solid @lightBlue;
+		border: 2px solid #fff;
 		margin-right: 10px;
 		transition: linear 0.2s;
 		&:hover {
 			background: @lightBlue;
+			border: 2x solid @lightBlue;
 			color: @darkBlue;
 			text-decoration: none;
 		}

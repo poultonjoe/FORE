@@ -244,6 +244,15 @@ html body .text-blue p {
 html body .links-blue a {
   color: #88D0E9;
 }
+html body .links-blue a.button,
+html body .links-blue input[type="submit"] {
+  color: #fff;
+}
+html body .links-blue a.button:hover,
+html body .links-blue input[type="submit"]:hover {
+  color: #2d2e83;
+  border: 2px solid #88D0E9;
+}
 html body .text-blue h1,
 html body .text-blue h2,
 html body .text-blue h3,
@@ -344,13 +353,14 @@ html body input[type="submit"] {
   display: inline-block;
   padding: 3px 15px;
   border-radius: 2px;
-  border: 2px solid #88D0E9;
+  border: 2px solid #fff;
   margin-right: 10px;
   transition: linear 0.2s;
 }
 html body .button:hover,
 html body input[type="submit"]:hover {
   background: #88D0E9;
+  border: 2x solid #88D0E9;
   color: #2d2e83;
   text-decoration: none;
 }
