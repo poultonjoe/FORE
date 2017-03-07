@@ -815,8 +815,8 @@ html body .social-links-list .social-links-list--ig:hover {
   }
   html body .carousel .slick-current .main-content {
     display: block;
-    width: 380px;
-    margin-left: -78px;
+    width: 200%;
+    margin-left: -50%;
   }
   html body footer.row.root {
     text-align: center;
