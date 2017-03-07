@@ -633,6 +633,17 @@ html body .social-links-list .social-links-list--ig:hover {
     clear: both;
     margin-bottom: 20px;
   }
+  html body footer ul {
+    padding: 0;
+    margin: 0;
+  }
+  html body footer .row--ul-inline-list {
+    padding: 0;
+  }
+  html body footer .row--ul-inline-list ul {
+    padding: 0;
+    margin: 0;
+  }
 }
 /* Carousels */
 .carousel {
