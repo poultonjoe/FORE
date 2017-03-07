@@ -209,7 +209,7 @@ html body h6 {
 html body h1 {
   text-align: center;
   margin: 0;
-  font-size: 30px;
+  font-size: 36px;
 }
 html body h2,
 html body h3 {
@@ -307,7 +307,7 @@ html body blockquote > p {
 }
 html body blockquote > p:before,
 html body blockquote > p:after {
-  font-size: 30px;
+  font-size: 36px;
   font-weight: bold;
   color: #2c82c2;
   display: inline-block;
@@ -419,14 +419,18 @@ html body .header--no-hero-img {
 }
 html body .hero-text {
   display: inline-block;
-  font-size: 14pt;
-  line-height: 10pt;
-  position: relative;
-  color: #F8F8F8;
-  border-bottom: 5px solid #2c82c2;
-  top: 16vh;
-  left: 43vw;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-size: 30px;
+  width: 60vw;
+  left: 20vw;
+  padding: 0;
+  top: 58vh;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  color: #fff;
+}
+html body .hero-text h1 {
+  font-weight: normal;
 }
 html body .social-links-list .social-links-list--fb,
 html body .social-links-list .social-links-list--tw,
@@ -483,15 +487,6 @@ html body .social-links-list .social-links-list--ig:hover {
   html body header.row .hero-image {
     margin: 0;
     padding: 0;
-  }
-  html body header.row .hero-text {
-    top: 420px;
-    right: -110px;
-    left: inherit;
-  }
-  html body header.row .hero-text h1 {
-    width: 190px;
-    border-bottom: 0;
   }
   html body header.row nav.top-menu {
     background: none;
@@ -564,7 +559,7 @@ html body .social-links-list .social-links-list--ig:hover {
   }
   html body header.row.headerMobileActive nav.top-menu ul#top-menu--nav-list li {
     display: block;
-    font-size: 30px;
+    font-size: 36px;
     float: none;
     margin-bottom: 20px;
   }
