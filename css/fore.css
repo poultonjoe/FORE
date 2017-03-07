@@ -607,9 +607,13 @@ html body .social-links-list .social-links-list--ig:hover {
     margin: -10px auto 5px auto;
   }
   html body article {
-    width: 80%;
+    width: 90%;
     margin: auto;
     text-align: left;
+  }
+  html body .center-all {
+    width: 90%;
+    margin: auto;
   }
   html body .mobile-centralise {
     text-align: center;
