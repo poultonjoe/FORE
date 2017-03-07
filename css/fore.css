@@ -389,6 +389,7 @@ html body .load-more--button {
   float: right;
   font-weight: bold;
   padding-top: 15px;
+  margin-right: 40px;
 }
 html body .load-more--button .arrow {
   margin-left: 10px;
@@ -400,6 +401,9 @@ html body #map {
   height: 60vh;
 }
 html body .center-sm {
+  text-align: center;
+}
+html body .center-all {
   text-align: center;
 }
 html body .hero-image {
