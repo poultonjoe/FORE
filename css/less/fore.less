@@ -10,7 +10,7 @@
 @medBlue: #2c82c2;
 @darkBlue: #2d2e83;
 @lightGrey: #F2F2F2;
-@darkGrey: #c1c1c1;
+@darkGrey: #777;
 
 html body {
 	text-align: center;
@@ -244,7 +244,10 @@ html body {
 		margin: auto;
 	}
 	.text-blue, .text-blue p {
-		color: #88D0E9;
+		color: @lightBlue;
+	}
+	.links-blue a {
+		color: @lightBlue;
 	}
 	.text-blue {
 		h1,h2,h3,h4,h5,h6 {
@@ -342,7 +345,7 @@ html body {
 	.buttons-container {
 		&.light .button {
 			border: 0;
-			background: #88D0E9;
+			background: @lightBlue;
 		}
 	}
 	.button, input[type="submit"] {
@@ -356,6 +359,7 @@ html body {
 		transition: linear 0.2s;
 		&:hover {
 			background: @lightBlue;
+			color: @darkBlue;
 			text-decoration: none;
 		}
 	}

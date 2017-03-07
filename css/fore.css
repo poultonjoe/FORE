@@ -241,6 +241,9 @@ html body .text-blue,
 html body .text-blue p {
   color: #88D0E9;
 }
+html body .links-blue a {
+  color: #88D0E9;
+}
 html body .text-blue h1,
 html body .text-blue h2,
 html body .text-blue h3,
@@ -288,7 +291,7 @@ html body blockquote {
 html body blockquote,
 html body blockquote p {
   font-style: italic;
-  color: #c1c1c1;
+  color: #777;
 }
 html body blockquote > p {
   position: relative;
@@ -348,6 +351,7 @@ html body input[type="submit"] {
 html body .button:hover,
 html body input[type="submit"]:hover {
   background: #88D0E9;
+  color: #2d2e83;
   text-decoration: none;
 }
 html body .button-right {
@@ -699,6 +703,12 @@ html body .social-links-list .social-links-list--ig:hover {
     width: 100%;
     margin-left: 0;
   }
+  html body header.row nav.top-menu ul#top-menu--nav-list li a {
+    color: #fff;
+  }
+  html body header.row nav.top-menu.active ul#top-menu--nav-list li a {
+    color: #2c82c2;
+  }
   html body header.row nav.mobile {
     display: none;
   }
@@ -809,6 +819,10 @@ html body .social-links-list .social-links-list--ig:hover {
   }
   html body .row--ul-inline-list--content {
     text-align: center;
+  }
+  html body .list--no-pad--bottom {
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
 }
 html body .featured-page--content-block--grey {
