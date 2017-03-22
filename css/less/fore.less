@@ -6,7 +6,7 @@
 @font-small: 16px;
 @font-tiny: 14px;
 @font-super-tiny: 10px;
-@lightBlue: #88D0E9;
+@lightBlue: #b9d3ef;
 @medBlue: #2c82c2;
 @darkBlue: #2d2e83;
 @lightGrey: #F2F2F2;
@@ -89,10 +89,10 @@ html body {
 	    padding-bottom: 2%;
 	    height: auto;
 	    background: @lightBlue;
-	    background: -webkit-linear-gradient(left bottom, @darkBlue, #2581c4); 
-	    background: -o-linear-gradient(bottom left, @darkBlue, #2581c4);
-	    background: -moz-linear-gradient(bottom left, @darkBlue, #2581c4);
-	    background: linear-gradient(to bottom left, @darkBlue, #2581c4);
+	    background: -webkit-linear-gradient(left bottom, @lightBlue, @darkBlue); 
+	    background: -o-linear-gradient(bottom left, @lightBlue, @darkBlue);
+	    background: -moz-linear-gradient(bottom left, @lightBlue, @darkBlue);
+	    background: linear-gradient(to bottom left, @lightBlue, @darkBlue);
 	    color: #fff;
 	    a, address, p {
 	    	color: #fff;
@@ -204,7 +204,8 @@ html body {
 		a {
 			color: #000;
 			&:hover {
-				color: @darkBlue;
+				color: #000;
+				text-decoration: none;
 			}
 		}
 		.fore-logo {
@@ -216,7 +217,7 @@ html body {
 	h1, h2, h3, h4, h5, h6 {
 		padding: 0;
 		margin: 10px 0;
-		font-weight: bold;
+		font-weight: normal;
 	}	
 	h1 {
 	    text-align: center;
@@ -449,7 +450,7 @@ html body {
 	    left: 20vw;
 	    padding: 0;
 	    top: 58vh;
-	    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+	    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
 	    position: absolute;
 	    color: #fff;
 	    h1 {
@@ -489,6 +490,14 @@ html body {
 				background-size: contain;
 			}
 
+		}
+		&#social-links-mobile-nav {
+			li {
+				display: inline-block !important;
+				a {
+					border: 0 !important;
+				}
+			}
 		}
 	}
 }

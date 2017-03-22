@@ -345,7 +345,6 @@ textarea {
    ========================================================================== */
 
 
-
 .contact-left-half {
     flex: 1.4 0 0;
     padding-left: 7%;
@@ -363,23 +362,3 @@ textarea {
     margin-top: -1.5%;
     color: white;
 }
-
-/* ==========================================================================
-   Partners Section
-   ========================================================================== */
-
-.leadbetter-logo {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.fenix-logo {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.wca-logo {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-

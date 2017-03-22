@@ -80,11 +80,11 @@ html body .index-container-blue {
   padding-top: 2%;
   padding-bottom: 2%;
   height: auto;
-  background: #88D0E9;
-  background: -webkit-linear-gradient(left bottom, #2d2e83, #2581c4);
-  background: -o-linear-gradient(bottom left, #2d2e83, #2581c4);
-  background: -moz-linear-gradient(bottom left, #2d2e83, #2581c4);
-  background: linear-gradient(to bottom left, #2d2e83, #2581c4);
+  background: #b9d3ef;
+  background: -webkit-linear-gradient(left bottom, #b9d3ef, #2d2e83);
+  background: -o-linear-gradient(bottom left, #b9d3ef, #2d2e83);
+  background: -moz-linear-gradient(bottom left, #b9d3ef, #2d2e83);
+  background: linear-gradient(to bottom left, #b9d3ef, #2d2e83);
   color: #fff;
 }
 html body .index-container-blue a,
@@ -194,7 +194,8 @@ html body footer a {
   color: #000;
 }
 html body footer a:hover {
-  color: #2d2e83;
+  color: #000;
+  text-decoration: none;
 }
 html body footer .fore-logo {
   height: 35px;
@@ -207,7 +208,7 @@ html body h5,
 html body h6 {
   padding: 0;
   margin: 10px 0;
-  font-weight: bold;
+  font-weight: normal;
 }
 html body h1 {
   text-align: center;
@@ -247,10 +248,10 @@ html body .narrow-text {
 }
 html body .text-blue,
 html body .text-blue p {
-  color: #88D0E9;
+  color: #b9d3ef;
 }
 html body .links-blue a {
-  color: #88D0E9;
+  color: #b9d3ef;
 }
 html body .links-blue a.button,
 html body .links-blue input[type="submit"] {
@@ -259,7 +260,7 @@ html body .links-blue input[type="submit"] {
 html body .links-blue a.button:hover,
 html body .links-blue input[type="submit"]:hover {
   color: #2d2e83;
-  border: 2px solid #88D0E9;
+  border: 2px solid #b9d3ef;
 }
 html body .text-blue h1,
 html body .text-blue h2,
@@ -352,7 +353,7 @@ html body .inline-list li {
 }
 html body .buttons-container.light .button {
   border: 0;
-  background: #88D0E9;
+  background: #b9d3ef;
 }
 html body .button,
 html body input[type="submit"] {
@@ -366,8 +367,8 @@ html body input[type="submit"] {
 }
 html body .button:hover,
 html body input[type="submit"]:hover {
-  background: #88D0E9;
-  border: 2x solid #88D0E9;
+  background: #b9d3ef;
+  border: 2x solid #b9d3ef;
   color: #2d2e83;
   text-decoration: none;
 }
@@ -436,7 +437,7 @@ html body .hero-text {
   left: 20vw;
   padding: 0;
   top: 58vh;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
   position: absolute;
   color: #fff;
 }
@@ -474,6 +475,12 @@ html body .social-links-list .social-links-list--ig {
 html body .social-links-list .social-links-list--ig:hover {
   background: url(../img/social/ig-hover@2x.png) no-repeat;
   background-size: contain;
+}
+html body .social-links-list#social-links-mobile-nav li {
+  display: inline-block !important;
+}
+html body .social-links-list#social-links-mobile-nav li a {
+  border: 0 !important;
 }
 @media (max-width: 991px) {
   html body .container {
@@ -703,11 +710,11 @@ html body .social-links-list .social-links-list--ig:hover {
 }
 .carousel .slick-arrow:hover,
 .arrow:hover {
-  color: #88D0E9;
+  color: #b9d3ef;
 }
 .carousel .slick-arrow:hover:before,
 .arrow:hover:before {
-  color: #88D0E9;
+  color: #b9d3ef;
 }
 .carousel.center {
   margin: auto;
