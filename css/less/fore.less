@@ -12,6 +12,9 @@
 @lightGrey: #F2F2F2;
 @darkGrey: #777;
 
+/* reset */
+@import "normalise.less";
+
 html body {
 	text-align: center;
 
@@ -499,6 +502,71 @@ html body {
 				}
 			}
 		}
+	}
+
+	.blue-outline-button-right {
+	    display: inline-block;
+	    margin-right: 8px;
+	    margin-bottom: 8%;
+	    text-align: center;
+	    border-radius: 5px;
+	    border: 2px solid #88d0e9;
+	    padding: 5px;
+	    width: 120px;
+	    height: auto; 
+	}
+	.blue-outline-button-right a:link{
+	    color:#FFFFFF;
+	    text-decoration: none;
+	}
+	.blue-outline-button-left {
+	    position: relative;
+	    left: 2.7vw;
+	    margin-right: 8px;
+	    margin-bottom: 8%;
+	    display: inline-block;
+	    text-align: center;
+	    border-radius: 5px;
+	    border: 2px solid #88d0e9;
+	    padding: 5px;
+	    width: 120px;
+	    height: auto; 
+	}
+	.blue-outline-button-left a:link{
+	    color:#FFFFFF;
+	    text-decoration: none;
+	}
+	#solid-blue-button-right {
+	    display: inline-block;
+	    margin-right: 8px;
+	    margin-bottom: 8%;
+	    text-align: center;
+	    background-color: #2581C4;
+	    border-radius: 5px;
+	    border: 2px solid #2581C4;
+	    padding: 5px;
+	    width: 120px;
+	    height: auto; 
+	}
+
+	#solid-blue-button-right a:link{
+	    color:#FFFFFF;
+	    text-decoration: none;
+	}
+	.contact-left-half {
+	    flex: 1.4 0 0;
+	    padding-left: 7%;
+	    padding-right: 2%;
+	    padding-bottom: 2%;
+	    width: 25%;
+	}
+	.contact-right-half {
+	    flex: 1 0 0;
+	    padding-right: 7%;
+	    padding-bottom: 2%;
+	    width: 91%;
+	    margin-top: -1.5%;
+	    color: white;
 	}
 }
 
