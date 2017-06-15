@@ -437,10 +437,10 @@ html body .index-container-blue {
   padding-bottom: 2%;
   height: auto;
   background: #b9d3ef;
-  background: -webkit-linear-gradient(left bottom, #b9d3ef, #2d2e83);
-  background: -o-linear-gradient(bottom left, #b9d3ef, #2d2e83);
-  background: -moz-linear-gradient(bottom left, #b9d3ef, #2d2e83);
-  background: linear-gradient(to bottom left, #b9d3ef, #2d2e83);
+  background: -webkit-linear-gradient(left bottom, #337ab7, #2d2e83);
+  background: -o-linear-gradient(bottom left, #337ab7, #2d2e83);
+  background: -moz-linear-gradient(bottom left, #337ab7, #2d2e83);
+  background: linear-gradient(to bottom left, #337ab7, #2d2e83);
   color: #fff;
 }
 html body .index-container-blue a,
@@ -450,6 +450,9 @@ html body .index-container-blue p {
 }
 html body .index-container-blue a.button {
   text-decoration: none;
+}
+html body .index-container-blue img {
+  border-radius: 6px;
 }
 html body .index-container-grey {
   background-color: #F2F2F2;
@@ -709,7 +712,7 @@ html body .inline-list li {
 }
 html body .buttons-container.light .button {
   border: 0;
-  background: #b9d3ef;
+  background: #337ab7;
 }
 html body .button,
 html body input[type="submit"] {
@@ -1100,7 +1103,7 @@ html body .contact-right-half {
 .arrow {
   color: #2c82c2;
   border-radius: 50px;
-  border: 3px solid;
+  border: 0;
   padding: 15px;
   top: 30%;
   opacity: 1;
@@ -1226,6 +1229,10 @@ html body .contact-right-half {
   html body .split-content-md h6 {
     margin-top: 0;
     padding-top: 0;
+  }
+  html body .split-content-md h2 {
+    font-weight: bold;
+    font-size: 20px;
   }
   html body .split-content-md .row {
     padding-bottom: 30px;

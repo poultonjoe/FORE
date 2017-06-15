@@ -7,6 +7,8 @@
 @font-tiny: 14px;
 @font-super-tiny: 10px;
 @lightBlue: #b9d3ef;
+@lightBlueButton: #337ab7;
+@lightBlueGradient: #337ab7;
 @medBlue: #2c82c2;
 @darkBlue: #2d2e83;
 @lightGrey: #F2F2F2;
@@ -92,10 +94,10 @@ html body {
 	    padding-bottom: 2%;
 	    height: auto;
 	    background: @lightBlue;
-	    background: -webkit-linear-gradient(left bottom, @lightBlue, @darkBlue); 
-	    background: -o-linear-gradient(bottom left, @lightBlue, @darkBlue);
-	    background: -moz-linear-gradient(bottom left, @lightBlue, @darkBlue);
-	    background: linear-gradient(to bottom left, @lightBlue, @darkBlue);
+	    background: -webkit-linear-gradient(left bottom, @lightBlueGradient, @darkBlue); 
+	    background: -o-linear-gradient(bottom left, @lightBlueGradient, @darkBlue);
+	    background: -moz-linear-gradient(bottom left, @lightBlueGradient, @darkBlue);
+	    background: linear-gradient(to bottom left, @lightBlueGradient, @darkBlue);
 	    color: #fff;
 	    a, address, p {
 	    	color: #fff;
@@ -104,6 +106,9 @@ html body {
 	    	&.button {	
 	    		text-decoration: none;
 	    	}
+	    }
+	    img {
+	    	border-radius: 6px;
 	    }
 	}
 	.index-container-grey {
@@ -364,7 +369,7 @@ html body {
 	.buttons-container {
 		&.light .button {
 			border: 0;
-			background: @lightBlue;
+			background: @lightBlueButton;
 		}
 	}
 	.button, input[type="submit"] {
