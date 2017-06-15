@@ -2,10 +2,10 @@ var mediaBreakPoint = 991;
 
 $(window).on("scroll", function() {
     if( $(window).scrollTop() > 50 && window.innerWidth > mediaBreakPoint ) {
-        $(".top-menu").addClass("active");
+        $(".top-menu:not(.always-active)").addClass("active");
     } else {
         //remove the background property so it comes transparent again (defined in your css)
-       $(".top-menu").removeClass("active");
+       $(".top-menu:not(.always-active)").removeClass("active");
     }
 });
 
