@@ -32,29 +32,33 @@ $(document).ready(function(){
     $('.carousel.center-multi').each(function(i,el){
     	$(el).slick({
 			infinite: true,
-			slidesToShow: 3,
+			slidesToShow: 2,
 			slidesToScroll: 1,
 			focusOnSelect: true,
 			arrows: true,
 			dots: false,
 			centerMode: true,
+            centerPadding: '40px',
+            slide: 'div',
+            adaptiveHeight: true,
   			responsive: [
 		    {
 		    	breakpoint: mediaBreakPoint,
 				settings: {
 					slidesToShow: 1,
 					slidesToScroll: 1,
-					centerMode: true,
-					centerPadding: '60px',
+					centerMode: false,
+					centerPadding: '0',
 					arrows: true,
-					dots: true		   
+					dots: true,
+                    slide: 'div'
 				}
 		    }]
     	});
     });	
     $('.carousel.single').each(function(i,el){
     	$(el).slick({
-			arrows: true,
+			arrows: true
     	});
     });	
 

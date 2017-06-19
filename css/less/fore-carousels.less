@@ -1,68 +1,80 @@
 /* Carousels */
-	.carousel {
-		padding: 40px 0;
-		width: 80%;
-		margin: auto;
-		&.single {
-			img {
-				margin-bottom: 15px;
-			}
-			> div p {
-				width: 80%;
-				margin: auto;
-			}
+.carousel {
+	padding: 40px 0;
+	width: 80%;
+	margin: auto;
+	&.single {
+		img {
+			margin-bottom: 15px;
 		}
-		> div {
-			text-align: center;
-			img {
-				margin: auto;
-			}
-			.main-content {
-				display: none;
-			}
-		}
-		.slick-current {
-			.main-content {
-				display: block;
-			}
+		> div p {
+			width: 80%;
+			margin: auto;
 		}
 	}
-	.carousel .slick-arrow, .arrow {
+	> div {
+		text-align: center;
+		img {
+			margin: auto;
+		}
+		.main-content {
+			display: none;
+		}
+	}
+	.slick-current {
+		.main-content {
+			display: block;
+		}
+	}
+}
+.carousel .slick-arrow, .arrow {
+	color: @medBlue;
+	border-radius: 50px;
+	border: 0;
+	padding: 15px;
+	top: 30%;
+	opacity: 1;
+	font-family: 'slick';
+	&:before {
 		color: @medBlue;
-		border-radius: 50px;
-		border: 0;
-		padding: 15px;
-		top: 30%;
+	    position: absolute;
+	    text-align: center;
+	    font-weight: bold;
+	    font-size: 50px;
+	    top: -14px;
+	    left: 6px;
+	}
+	&.slick-prev:before {
+		content: "‹";
 		opacity: 1;
-		font-family: 'slick';
+	}
+	&.slick-next:before {
+		content: "›";
+		text-indent: 3px;
+		opacity: 1;
+	}
+	&:hover {
+		color: @lightBlue;
 		&:before {
-			color: @medBlue;
-		    position: absolute;
-		    text-align: center;
-		    font-weight: bold;
-		    font-size: 50px;
-		    top: -14px;
-		    left: 6px;
-		}
-		&.slick-prev:before {
-			content: "‹";
-			opacity: 1;
-		}
-		&.slick-next:before {
-			content: "›";
-			text-indent: 3px;
-			opacity: 1;
-		}
-		&:hover {
 			color: @lightBlue;
-			&:before {
-				color: @lightBlue;
-			}
 		}
 	}
-	.carousel.center {
-		margin: auto;
-	}
-	.center-multi--small-thumbnails img {
-		width: 110%;
-	}
+}
+.carousel.center {
+	margin: auto;
+}
+.center-multi--small-thumbnails img {
+	width: 110%;
+}
+.slick-initialized .slick-slide {
+    display: block;
+    
+    vertical-align: middle;
+    > a {
+    	display: inline;
+    	vertical-align: middle;
+  	}
+  	@media (min-width: @media-cutoff) {
+  		padding: 20px;
+  	}
+}
