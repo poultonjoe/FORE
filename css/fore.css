@@ -1164,7 +1164,6 @@ html body .contact-right-half {
 }
 @media (min-width: 991px) {
   .slick-initialized .slick-slide {
-    padding: 10px;
     overflow: hidden;
   }
   .slick-initialized .slick-slide a,

@@ -1,3 +1,4 @@
+
 var mediaBreakPoint = 991;
 
 $(window).on("scroll", function() {
@@ -32,13 +33,12 @@ $(document).ready(function(){
     $('.carousel.center-multi').each(function(i,el){
     	$(el).slick({
 			infinite: true,
-			slidesToShow: 2,
+			slidesToShow: 1,
 			slidesToScroll: 1,
 			focusOnSelect: true,
 			arrows: true,
 			dots: false,
-			centerMode: true,
-            centerPadding: '40px',
+			centerMode: false,
             slide: 'div',
             adaptiveHeight: true,
   			responsive: [
