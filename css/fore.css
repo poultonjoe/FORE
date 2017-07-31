@@ -1154,20 +1154,20 @@ html body .contact-right-half {
 .center-multi--small-thumbnails img {
   width: 110%;
 }
-.slick-initialized .slick-slide {
+.carousel.center-multi .slick-initialized .slick-slide {
   display: block;
   vertical-align: middle;
 }
-.slick-initialized .slick-slide > a {
+.carousel.center-multi .slick-initialized .slick-slide > a {
   display: inline;
   vertical-align: middle;
 }
 @media (min-width: 991px) {
-  .slick-initialized .slick-slide {
+  .carousel.center-multi .slick-initialized .slick-slide {
     overflow: hidden;
   }
-  .slick-initialized .slick-slide a,
-  .slick-initialized .slick-slide img {
+  .carousel.center-multi .slick-initialized .slick-slide a,
+  .carousel.center-multi .slick-initialized .slick-slide img {
     width: 100%;
     height: 100%;
     display: block;
